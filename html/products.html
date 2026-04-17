@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sandik Technologies Products — Programmable DC Sources, AC Sources, Bidirectional units, Electronic Loads, Battery Simulators and System Solutions."
+    />
+    <title>Products | Sandik Technologies Pvt. Ltd.</title>
+    <link rel="icon" href="../assets/images/favicon-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="toast" id="toast" role="alert"></div>
+
+    <!-- HEADER (same as index) -->
+    <header id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="../assets/images/logo.jpeg"
+            alt="Sandik Technologies"
+            width="160"
+            height="42"
+        /></a>
+        <nav class="main-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </div>
+          <div class="nav-item">
+            <a href="products.html" class="nav-link active"
+              >Products <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" /></svg
+            ></a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <div class="mega-col-title">DC Power</div>
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-smp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/SMP</div>
+                    <div class="mega-link-desc">Switching, 750W–2.4kW</div>
+                  </div></a
+                >
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/HP</div>
+                    <div class="mega-link-desc">High Power, 3kW–63kW</div>
+                  </div></a
+                >
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-slv"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/SLV</div>
+                    <div class="mega-link-desc">High Voltage, up to 2000V</div>
+                  </div></a
+                >
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-linear"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">Linear DC Sources</div>
+                    <div class="mega-link-desc">
+                      Ultra-low ripple, regulated
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">AC Power</div>
+                <a href="products.html?cat=ac-sources&sub=1ph" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources — Single Phase</div>
+                    <div class="mega-link-desc">Programmable, 45Hz–1000Hz</div>
+                  </div></a
+                >
+                <a href="products.html?cat=ac-sources&sub=3ph" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources — Three Phase</div>
+                    <div class="mega-link-desc">Up to 2000kVA</div>
+                  </div></a
+                >
+                <a
+                  href="products.html?cat=dc-bidir&sub=lab-hpr"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">
+                      DC Bidirectional — LAB/HPR
+                    </div>
+                    <div class="mega-link-desc">Regenerative, 7kW–1.4MW</div>
+                  </div></a
+                >
+                <a href="products.html?cat=ac-bidir" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Bidirectional</div>
+                    <div class="mega-link-desc">Single &amp; Three Phase</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Loads &amp; Simulators</div>
+                <a
+                  href="products.html?cat=dc-loads&sub=elp-dcw"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Loads — ELP/DCW</div>
+                    <div class="mega-link-desc">High Speed, µs transients</div>
+                  </div></a
+                >
+                <a href="products.html?cat=dc-loads&sub=nxi" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">
+                      DC Loads — NXI Multi-Channel
+                    </div>
+                    <div class="mega-link-desc">Up to 16 channels</div>
+                  </div></a
+                >
+                <a
+                  href="products.html?cat=battery-pv-sim&sub=bat-sim"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">Battery Simulators</div>
+                    <div class="mega-link-desc">Li-Ion, LFP, NMC, CAN BMS</div>
+                  </div></a
+                >
+                <a href="products.html?cat=system-solutions" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">System Integration</div>
+                    <div class="mega-link-desc">Turnkey, HIL, Battery Test</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="applications.html" class="nav-link">Applications</a>
+          </div>
+          <div class="nav-item">
+            <a href="service-support.html" class="nav-link"
+              >Service &amp; Support</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="career.html" class="nav-link">Career</a>
+          </div>
+        </nav>
+        <a href="contact.html" class="header-cta"
+          ><i class="bi bi-envelope-fill"></i> Contact Us</a
+        >
+        <button class="hamburger" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Us</a>
+        <a href="products.html" class="mob-link">Products</a>
+        <a href="products.html?cat=dc-sources" class="mob-sub">→ DC Sources</a>
+        <a href="products.html?cat=ac-sources" class="mob-sub">→ AC Sources</a>
+        <a href="products.html?cat=dc-bidir" class="mob-sub"
+          >→ DC Bidirectional</a
+        >
+        <a href="products.html?cat=dc-loads" class="mob-sub"
+          >→ DC Electronic Loads</a
+        >
+        <a href="products.html?cat=battery-pv-sim" class="mob-sub"
+          >→ Battery &amp; PV Simulators</a
+        >
+        <a href="products.html?cat=system-solutions" class="mob-sub"
+          >→ System Solutions</a
+        >
+        <a href="applications.html" class="mob-link">Applications</a>
+        <a href="service-support.html" class="mob-link"
+          >Service &amp; Support</a
+        >
+        <a href="career.html" class="mob-link">Career</a>
+        <a href="contact.html" class="mob-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container phero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Products</span>
+        </nav>
+        <div class="page-hero-eyebrow">
+          ET System Electronic GmbH — India Representative
+        </div>
+        <h1>Programmable<br />Power Solutions</h1>
+        <p>
+          8 product categories · 30+ series · DC Sources to System Integration
+        </p>
+      </div>
+    </div>
+
+    <!-- PRODUCTS LAYOUT -->
+    <div class="products-layout">
+      <!-- Sidebar -->
+      <div class="products-sidebar" id="productsSidebar">
+        <!-- Built by products.js -->
+      </div>
+
+      <!-- Main area -->
+      <div class="products-main">
+        <!-- Topbar -->
+        <div class="products-topbar">
+          <div class="products-breadcrumb" id="productsBreadcrumb">
+            Products / <span>DC Sources</span>
+          </div>
+          <div class="flex gap-3 flex-wrap" style="align-items: center">
+            <div class="products-count" id="productsCount">0 Products</div>
+            <a href="contact.html" class="btn btn-red btn-sm"
+              ><i class="bi bi-envelope"></i> Request Quote</a
+            >
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="products-grid" id="productsGrid"></div>
+
+        <!-- No products message -->
+        <div class="no-products-msg" id="noProductsMsg" style="display: none">
+          <i class="bi bi-search"></i>
+          No products found. Please select a subcategory or
+          <a href="contact.html" style="color: var(--red)">contact us</a> for
+          custom requirements.
+        </div>
+
+        <!-- Footer note -->
+        <div
+          style="
+            padding: 2rem;
+            background: var(--dark-2);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 1px;
+          "
+        >
+          <div class="flex flex-between flex-wrap gap-3">
+            <div>
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.16em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.4rem;
+                "
+              >
+                Technology Partner
+              </div>
+              <p
+                style="
+                  color: rgba(255, 255, 255, 0.45);
+                  font-size: 0.85rem;
+                  margin: 0;
+                "
+              >
+                Product specifications based on ET System Electronic GmbH,
+                Germany catalog. For complete details, visit ET System or
+                contact our sales team.
+              </p>
+            </div>
+            <a
+              href="https://www.et-system.de/en/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-red btn-sm"
+              style="white-space: nowrap; align-self: center"
+              ><i class="bi bi-box-arrow-up-right"></i> ET System Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="footer-brand">
+                <img
+                  src="../assets/images/logo.jpeg"
+                  alt="Sandik Technologies"
+                  width="160"
+                  height="44"
+                />
+              </div>
+              <p class="footer-tagline">
+                Specialized engineering company delivering high-performance
+                programmable AC/DC power supply solutions for industrial and R&D
+                sectors across India.
+              </p>
+              <div class="footer-socials">
+                <a
+                  href="https://wa.me/919740570119"
+                  target="_blank"
+                  class="social-btn"
+                  style="
+                    background: #25d366;
+                    border-color: #25d366;
+                    color: white;
+                  "
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="mailto:sales@san-dik.com" class="social-btn"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a href="tel:+919972607819" class="social-btn"
+                  ><i class="bi bi-telephone"></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer-heading">Quick Links</div>
+              <nav class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Products</a>
+                <a href="applications.html" class="footer-link">Applications</a>
+                <a href="service-support.html" class="footer-link"
+                  >Service &amp; Support</a
+                >
+                <a href="career.html" class="footer-link">Career</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Products</div>
+              <nav class="footer-links">
+                <a href="products.html?cat=dc-sources" class="footer-link"
+                  >DC Sources</a
+                >
+                <a href="products.html?cat=ac-sources" class="footer-link"
+                  >AC Sources</a
+                >
+                <a href="products.html?cat=dc-bidir" class="footer-link"
+                  >DC Bidirectional</a
+                >
+                <a href="products.html?cat=ac-bidir" class="footer-link"
+                  >AC Bidirectional</a
+                >
+                <a href="products.html?cat=dc-loads" class="footer-link"
+                  >DC Loads</a
+                >
+                <a href="products.html?cat=battery-pv-sim" class="footer-link"
+                  >Battery &amp; PV Simulators</a
+                >
+                <a href="products.html?cat=system-solutions" class="footer-link"
+                  >System Integration</a
+                >
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Contact Us</div>
+              <div class="footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span
+                  >134, 1st Floor, 2nd Main Road, Kasturi Nagar, Bangalore –
+                  560043</span
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i
+                ><a href="tel:+919972607819">+91 99726 07819</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i
+                ><a href="mailto:sales@san-dik.com">sales@san-dik.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-whatsapp" style="color: #25d366"></i
+                ><a href="https://wa.me/919740570119" target="_blank"
+                  >+91 97405 70119</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex flex-between flex-wrap gap-2">
+          <span
+            >&copy; <span class="current-year"></span> Sandik Technologies Pvt.
+            Ltd. All rights reserved.</span
+          >
+          <!-- <span
+            >In technical collaboration with
+            <a href="https://www.et-system.de/en/" target="_blank"
+              >ET System Electronic GmbH, Germany</a
+            ></span
+          > -->
+          <span
+            >Web Solutions by
+            <a href="" target="_blank" rel="noopener">Render Infotech</a></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/919740570119" target="_blank" class="wa-fab"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <button class="scroll-top" id="scrollTopBtn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+  </body>
+</html>

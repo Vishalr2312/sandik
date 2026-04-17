@@ -1,0 +1,119 @@
+/* ============================================================
+   SANDIK TECHNOLOGIES — RESPONSIVE STYLESHEET
+   ============================================================ */
+
+/* ── TABLET (≤1100px) ──────────────────────── */
+@media (max-width: 1100px) {
+  .container { padding: 0 2rem; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .mega-dropdown { width: 580px; }
+}
+
+/* ── SMALL TABLET (≤900px) ─────────────────── */
+@media (max-width: 900px) {
+  .main-nav, .header-cta { display: none; }
+  .hamburger { display: flex; }
+
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+
+  .section { padding: 4rem 0; }
+  .section-sm { padding: 3rem 0; }
+
+  .section-title { font-size: 2.2rem; }
+
+  /* Hero adjustments */
+  .page-hero { padding: 7rem 0 3rem; }
+  .page-hero h1 { font-size: 2.8rem; }
+}
+
+/* ── MOBILE (≤600px) ──────────────────────── */
+@media (max-width: 600px) {
+  .container, .container-fluid { padding: 0 1.25rem; }
+
+  .grid-4 { grid-template-columns: 1fr; }
+
+  .section-title { font-size: 1.85rem; }
+
+  .page-hero h1 { font-size: 2.2rem; }
+  .page-hero { padding: 6.5rem 0 2.5rem; }
+
+  .btn { padding: 0.75rem 1.5rem; font-size: 0.75rem; }
+
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-main { padding: 3.5rem 0 2.5rem; }
+
+  .wa-fab { bottom: 1.25rem; right: 1.25rem; width: 48px; height: 48px; font-size: 1.3rem; }
+  .scroll-top { bottom: 5.5rem; right: 1.25rem; }
+}
+
+/* ── HOME HERO RESPONSIVE ─────────────────── */
+@media (max-width: 900px) {
+  .hero-split { grid-template-columns: 1fr; }
+  .hero-right-panel { display: none; }
+  .hero-left-panel { padding: 6rem 2rem 4rem; }
+}
+
+@media (max-width: 600px) {
+  .hero-title-main { font-size: 4rem; }
+  .hero-stats-row { flex-direction: column; gap: 0; }
+  .hero-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+}
+
+/* ── PRODUCTS PAGE RESPONSIVE ─────────────── */
+@media (max-width: 900px) {
+  .products-layout { grid-template-columns: 1fr; }
+  .products-sidebar {
+    position: relative;
+    top: auto;
+    max-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 1rem;
+    background: #111;
+    border-bottom: 2px solid var(--red);
+  }
+  .sidebar-cat-btn { flex: none; padding: 0.5rem 0.85rem; font-size: 0.65rem; }
+  .sidebar-subcats { display: none !important; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .products-grid { grid-template-columns: 1fr; }
+}
+
+/* ── CAREER RESPONSIVE ────────────────────── */
+@media (max-width: 700px) {
+  .job-header { flex-direction: column; gap: 1rem; }
+  .perks-grid { grid-template-columns: 1fr; }
+}
+
+/* ── CONTACT RESPONSIVE ───────────────────── */
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-cards-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 500px) {
+  .contact-cards-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* ── SERVICE RESPONSIVE ───────────────────── */
+@media (max-width: 900px) {
+  .service-process-grid { grid-template-columns: 1fr; }
+}
+
+/* ── ABOUT RESPONSIVE ─────────────────────── */
+@media (max-width: 900px) {
+  .about-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .mission-grid { grid-template-columns: 1fr; }
+}
+
+/* ── APPLICATIONS RESPONSIVE ──────────────── */
+@media (max-width: 900px) {
+  .app-detail-grid { grid-template-columns: 1fr; }
+  .app-cards-grid { grid-template-columns: 1fr; }
+}

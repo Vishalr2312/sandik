@@ -1,0 +1,1309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Applications — Sandik Technologies programmable power solutions for EV, renewable energy, aerospace, defence, R&D, and industrial sectors."
+    />
+    <title>Applications | Sandik Technologies Pvt. Ltd.</title>
+    <link rel="icon" href="../assets/images/favicon-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <style>
+      /* Page-specific overrides */
+      .app-section-block {
+        padding: 5rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .app-section-block:nth-child(even) {
+        background: var(--lighter);
+      }
+      .app-section-block:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toast" id="toast"></div>
+
+    <!-- ── HEADER ─────────────────────────────────── -->
+    <header id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="../assets/images/logo.jpeg"
+            alt="Sandik Technologies"
+            width="160"
+            height="42"
+        /></a>
+        <nav class="main-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </div>
+          <div class="nav-item">
+            <a href="products.html" class="nav-link"
+              >Products <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" /></svg
+            ></a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <div class="mega-col-title">DC Power</div>
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-smp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/SMP</div>
+                    <div class="mega-link-desc">Switching, 750W–2.4kW</div>
+                  </div></a
+                ><a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/HP</div>
+                    <div class="mega-link-desc">High Power, 3kW–63kW</div>
+                  </div></a
+                ><a
+                  href="products.html?cat=dc-bidir&sub=lab-hpr"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Bidirectional</div>
+                    <div class="mega-link-desc">Regenerative, 7kW–1.4MW</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">AC &amp; Loads</div>
+                <a href="products.html?cat=ac-sources" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources</div>
+                    <div class="mega-link-desc">1Ø &amp; 3Ø, up to 2000kVA</div>
+                  </div></a
+                ><a href="products.html?cat=dc-loads" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Electronic Loads</div>
+                    <div class="mega-link-desc">High Speed, Multi-Channel</div>
+                  </div></a
+                ><a href="products.html?cat=battery-pv-sim" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">
+                      Battery &amp; PV Simulators
+                    </div>
+                    <div class="mega-link-desc">Li-Ion, LFP, PV I-V curve</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Systems</div>
+                <a href="products.html?cat=ac-bidir" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Bidirectional</div>
+                    <div class="mega-link-desc">Source &amp; Sink, regen</div>
+                  </div></a
+                ><a href="products.html?cat=ac-dc-loads" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC/DC Loads</div>
+                    <div class="mega-link-desc">Universal loads</div>
+                  </div></a
+                ><a href="products.html?cat=system-solutions" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">System Integration</div>
+                    <div class="mega-link-desc">Turnkey, HIL, Battery Test</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="applications.html" class="nav-link active">Applications</a>
+          </div>
+          <div class="nav-item">
+            <a href="service-support.html" class="nav-link"
+              >Service &amp; Support</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="career.html" class="nav-link">Career</a>
+          </div>
+        </nav>
+        <a href="contact.html" class="header-cta"
+          ><i class="bi bi-envelope-fill"></i> Contact Us</a
+        >
+        <button class="hamburger" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Us</a>
+        <a href="products.html" class="mob-link">Products</a>
+        <a href="applications.html" class="mob-link">Applications</a>
+        <a href="service-support.html" class="mob-link"
+          >Service &amp; Support</a
+        >
+        <a href="career.html" class="mob-link">Career</a>
+        <a href="contact.html" class="mob-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Applications</span>
+        </nav>
+        <div class="page-hero-eyebrow">Industry Applications</div>
+        <h1>Where Our Technology<br />Makes a Difference</h1>
+        <p>
+          Trusted across industries requiring precision power control,
+          reliability, and advanced testing capabilities.
+        </p>
+      </div>
+    </div>
+
+    <!-- QUICK OVERVIEW CARDS -->
+    <section
+      class="section-sm"
+      style="background: var(--lighter); border-bottom: 1px solid var(--border)"
+    >
+      <div class="container">
+        <div class="app-cards-grid">
+          <a href="#ev" class="app-card-full reveal delay-100">
+            <div class="app-card-icon"><i class="bi bi-ev-front"></i></div>
+            <div>
+              <div class="app-card-title">
+                Electric Vehicles &amp; eMobility
+              </div>
+              <p class="app-card-desc">
+                Battery pack cycling, motor drive testing, OBC validation, BMS
+                HIL simulation.
+              </p>
+            </div>
+          </a>
+          <a href="#renewable" class="app-card-full reveal delay-200">
+            <div class="app-card-icon"><i class="bi bi-sun"></i></div>
+            <div>
+              <div class="app-card-title">Renewable Energy &amp; Grid</div>
+              <p class="app-card-desc">
+                Solar inverter MPPT, wind converter, ESS testing, grid code
+                compliance.
+              </p>
+            </div>
+          </a>
+          <a href="#aerospace" class="app-card-full reveal delay-300">
+            <div class="app-card-icon"><i class="bi bi-rocket"></i></div>
+            <div>
+              <div class="app-card-title">Aerospace &amp; Defence</div>
+              <p class="app-card-desc">
+                MIL-STD-704, DO-160, avionics power, satellite subsystem
+                validation.
+              </p>
+            </div>
+          </a>
+          <a href="#rd" class="app-card-full reveal delay-400">
+            <div class="app-card-icon"><i class="bi bi-lightbulb"></i></div>
+            <div>
+              <div class="app-card-title">R&amp;D Laboratories</div>
+              <p class="app-card-desc">
+                Prototype characterization, converter topology research, EMC
+                pre-compliance.
+              </p>
+            </div>
+          </a>
+          <a href="#industrial" class="app-card-full reveal delay-100">
+            <div class="app-card-icon"><i class="bi bi-building-gear"></i></div>
+            <div>
+              <div class="app-card-title">Industrial Automation</div>
+              <p class="app-card-desc">
+                VSD/servo drive testing, UPS validation, industrial electronics
+                characterization.
+              </p>
+            </div>
+          </a>
+          <a href="#consumer" class="app-card-full reveal delay-200">
+            <div class="app-card-icon"><i class="bi bi-phone"></i></div>
+            <div>
+              <div class="app-card-title">Consumer Electronics</div>
+              <p class="app-card-desc">
+                USB-PD, SMPS efficiency, IEC 62368 safety, LED driver testing.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EV ─────────────────────────────────────── -->
+    <section class="app-section-block" id="ev">
+      <div class="container">
+        <div class="app-detail-grid">
+          <div class="reveal reveal-left">
+            <div class="app-detail-block-icon">
+              <i class="bi bi-ev-front"></i>
+            </div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              Electric Vehicles<br /><span>&amp; eMobility</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              The EV revolution demands rigorous testing of every power
+              component — from individual battery cells to complete drive
+              systems. Our regenerative bidirectional sources and battery
+              simulators replicate real-world conditions with unmatched
+              precision, enabling faster development cycles and higher test
+              confidence.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=dc-bidir&sub=lab-hpr"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Bidirectional</a
+                >
+                <a
+                  href="products.html?cat=battery-pv-sim&sub=bat-sim"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >Battery Simulators</a
+                >
+                <a
+                  href="products.html?cat=ac-sources"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC Sources</a
+                >
+                <a
+                  href="products.html?cat=dc-loads"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Electronic Loads</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-right">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Battery pack formation, aging, and cycle testing with precise
+                charge/discharge control
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Motor drive and inverter testing under simulated real-world load
+                conditions
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                DC/DC converter and on-board charger (OBC) efficiency validation
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Battery Management System (BMS) hardware-in-loop (HIL)
+                simulation
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                EV charging infrastructure (EVSE) compliance and
+                interoperability testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                SoC/SoH battery simulation for range prediction and durability
+                testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Regenerative energy recovery during load testing — reduce energy
+                costs significantly
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RENEWABLE ──────────────────────────────── -->
+    <section class="app-section-block" id="renewable">
+      <div class="container">
+        <div class="app-detail-grid" style="direction: rtl">
+          <div class="reveal reveal-right" style="direction: ltr">
+            <div class="app-detail-block-icon"><i class="bi bi-sun"></i></div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              Renewable Energy<br /><span>&amp; Grid Testing</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              Solar inverters, wind converters, and energy storage systems
+              require extensive testing across all operating conditions. Our AC
+              sources and PV simulators replicate grid conditions and renewable
+              energy profiles with high fidelity, enabling complete IEC and EN
+              standard compliance testing.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=ac-sources"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC Sources</a
+                >
+                <a
+                  href="products.html?cat=battery-pv-sim&sub=pv-sim"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >PV Simulators</a
+                >
+                <a
+                  href="products.html?cat=dc-bidir"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Bidirectional</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-left" style="direction: ltr">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Solar inverter MPPT algorithm testing and efficiency
+                characterization per EN 50530
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Grid code compliance — voltage ride-through, frequency
+                deviation, reactive power tests
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Wind turbine converter and pitch motor drive validation
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Energy storage system (ESS) charge/discharge cycle testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                PV array I-V curve simulation for MPPT performance and
+                degradation studies
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Microgrid and islanding detection algorithm testing per IEC
+                62116
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── AEROSPACE ──────────────────────────────── -->
+    <section class="app-section-block" id="aerospace">
+      <div class="container">
+        <div class="app-detail-grid">
+          <div class="reveal reveal-left">
+            <div class="app-detail-block-icon">
+              <i class="bi bi-rocket"></i>
+            </div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              Aerospace<br /><span>&amp; Defence</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              Mission-critical aerospace and defence applications demand the
+              highest levels of power precision and reliability. Our systems
+              support MIL-STD-704, DO-160, and other defence-grade testing
+              standards — delivering the accuracy and reliability demanded by
+              safety-critical programmes.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Sources LAB/HP</a
+                >
+                <a
+                  href="products.html?cat=ac-sources&sub=1ph"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC Sources</a
+                >
+                <a
+                  href="products.html?cat=system-solutions"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >System Solutions</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-right">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Avionics equipment testing with MIL-STD-704 compliant AC/DC
+                power sources
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Satellite power subsystem simulation, qualification, and
+                acceptance testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                DO-160 environmental testing — power input characteristics and
+                voltage transients
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Radar and communication system power supply testing under
+                stressed conditions
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Battery backup and emergency power system qualification and
+                endurance testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Ground support equipment (GSE) power emulation for aircraft
+                systems testing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── R&D ────────────────────────────────────── -->
+    <section class="app-section-block" id="rd">
+      <div class="container">
+        <div class="app-detail-grid" style="direction: rtl">
+          <div class="reveal reveal-right" style="direction: ltr">
+            <div class="app-detail-block-icon">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              R&amp;D<br /><span>Laboratories</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              Research institutions and university labs need highly flexible,
+              programmable power solutions. Our benchtop and rack systems cover
+              the full range of R&D power requirements — from small prototype
+              boards to high-power converter test rigs — with the precision and
+              programmability modern research demands.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-smp"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Sources LAB/SMP</a
+                >
+                <a
+                  href="products.html?cat=dc-loads"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Loads</a
+                >
+                <a
+                  href="products.html?cat=ac-sources"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC Sources</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-left" style="direction: ltr">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Prototype electronics characterization with programmable voltage
+                and current over full range
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Power electronics research — converter topology development and
+                benchmarking
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Electromagnetic compatibility (EMC) pre-compliance and harmonic
+                injection testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Component aging and accelerated lifetime testing programs
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Multi-physics simulation requiring precise electrical boundary
+                conditions
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Educational lab setups for power electronics curriculum and
+                student projects
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INDUSTRIAL ─────────────────────────────── -->
+    <section class="app-section-block" id="industrial">
+      <div class="container">
+        <div class="app-detail-grid">
+          <div class="reveal reveal-left">
+            <div class="app-detail-block-icon">
+              <i class="bi bi-building-gear"></i>
+            </div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              Industrial<br /><span>Automation</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              Industrial drives, PLCs, actuators, and control systems all
+              require reliable power testing throughout their design,
+              validation, and production phases. Our programmable sources and
+              loads simulate the complex power conditions encountered in real
+              industrial environments.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Sources LAB/HP</a
+                >
+                <a
+                  href="products.html?cat=ac-sources&sub=3ph"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >3Ø AC Sources</a
+                >
+                <a
+                  href="products.html?cat=dc-loads"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Loads</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-right">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Variable speed drive (VSD) and servo amplifier testing under
+                load
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                PLC and industrial controller power supply validation and
+                burn-in testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Motor starting and dynamic loading simulation for drive
+                qualification
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                UPS and standby power system testing — load transfer and battery
+                backup
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Production line end-of-line (EOL) power testing automation
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Industrial IoT gateway and sensor network power validation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONSUMER ───────────────────────────────── -->
+    <section class="app-section-block" id="consumer">
+      <div class="container">
+        <div class="app-detail-grid" style="direction: rtl">
+          <div class="reveal reveal-right" style="direction: ltr">
+            <div class="app-detail-block-icon"><i class="bi bi-phone"></i></div>
+            <div class="section-label">Application Area</div>
+            <h2 class="section-title">
+              Consumer<br /><span>Electronics</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p class="section-body mb-4">
+              From smartphone chargers to home appliances, consumer electronics
+              require extensive power-related testing for safety certification,
+              efficiency characterization, and reliability qualification. Our
+              universal AC/DC loads and programmable sources cover the full
+              gamut of consumer electronics test requirements.
+            </p>
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.2em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Relevant Products
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem">
+                <a
+                  href="products.html?cat=ac-dc-loads"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC/DC Loads</a
+                >
+                <a
+                  href="products.html?cat=ac-sources&sub=1ph"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >AC Sources 1Ø</a
+                >
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-smp"
+                  style="
+                    display: inline-block;
+                    background: var(--dark-1);
+                    color: var(--white);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.65rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    padding: 0.35rem 0.85rem;
+                    transition: 0.2s;
+                  "
+                  onmouseover="this.style.background = 'var(--red)'"
+                  onmouseout="this.style.background = 'var(--dark-1)'"
+                  >DC Sources</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-red"
+              ><i class="bi bi-envelope"></i> Discuss This Application</a
+            >
+          </div>
+          <div class="reveal reveal-left" style="direction: ltr">
+            <div class="section-label" style="margin-bottom: 1rem">
+              Typical Use Cases
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                USB Power Delivery (PD) charger compliance and interoperability
+                testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Switch mode power supply (SMPS) efficiency and regulation
+                characterization
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                IEC 62368-1 / IEC 60950 audio/video and IT equipment safety
+                testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                LED driver and lighting system efficiency measurement and
+                flicker testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Battery-operated device runtime analysis and charging cycle
+                testing
+              </p>
+            </div>
+            <div class="usecase-item">
+              <div class="usecase-dot"><i class="bi bi-check2"></i></div>
+              <p class="usecase-text">
+                Power factor correction (PFC) circuit validation per IEC
+                61000-3-2
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section-red">
+      <div class="container" style="position: relative; z-index: 1">
+        <div class="flex flex-between flex-wrap gap-4 reveal">
+          <div>
+            <div class="section-label" style="--red: rgba(255, 255, 255, 0.6)">
+              Custom Solutions
+            </div>
+            <h2
+              style="
+                font-family: var(--font-display);
+                font-size: clamp(2rem, 4vw, 3.2rem);
+                color: var(--white);
+                letter-spacing: 0.04em;
+                line-height: 1.02;
+                margin-bottom: 0.75rem;
+              "
+            >
+              Your Application,<br />Our Expertise
+            </h2>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.85);
+                font-size: 0.97rem;
+                max-width: 440px;
+                line-height: 1.85;
+              "
+            >
+              If your application isn't listed here, our application engineers
+              will evaluate your requirements and recommend the right solution.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3" style="align-items: center">
+            <a href="contact.html" class="btn btn-white"
+              ><i class="bi bi-envelope"></i> Contact Our Engineers</a
+            >
+            <a href="products.html" class="btn btn-outline"
+              ><i class="bi bi-grid-3x3-gap"></i> Explore Products</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="footer-brand">
+                <img
+                  src="../assets/images/logo.jpeg"
+                  alt="Sandik Technologies"
+                  width="160"
+                  height="44"
+                />
+              </div>
+              <p class="footer-tagline">
+                Specialized engineering company delivering high-performance
+                programmable power supply solutions for industrial and R&D
+                sectors.
+              </p>
+              <div class="footer-socials">
+                <a
+                  href="https://wa.me/919740570119"
+                  target="_blank"
+                  class="social-btn"
+                  style="
+                    background: #25d366;
+                    border-color: #25d366;
+                    color: white;
+                  "
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="mailto:sales@san-dik.com" class="social-btn"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a href="tel:+919972607819" class="social-btn"
+                  ><i class="bi bi-telephone"></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer-heading">Quick Links</div>
+              <nav class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Products</a>
+                <a href="applications.html" class="footer-link">Applications</a>
+                <a href="service-support.html" class="footer-link"
+                  >Service &amp; Support</a
+                >
+                <a href="career.html" class="footer-link">Career</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Applications</div>
+              <nav class="footer-links">
+                <a href="#ev" class="footer-link">Electric Vehicles</a>
+                <a href="#renewable" class="footer-link">Renewable Energy</a>
+                <a href="#aerospace" class="footer-link"
+                  >Aerospace &amp; Defence</a
+                >
+                <a href="#rd" class="footer-link">R&amp;D Laboratories</a>
+                <a href="#industrial" class="footer-link"
+                  >Industrial Automation</a
+                >
+                <a href="#consumer" class="footer-link">Consumer Electronics</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Contact Us</div>
+              <div class="footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span
+                  >134, 1st Floor, 2nd Main Road, Kasturi Nagar, Bangalore –
+                  560043</span
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i
+                ><a href="tel:+919972607819">+91 99726 07819</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i
+                ><a href="mailto:sales@san-dik.com">sales@san-dik.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-whatsapp" style="color: #25d366"></i
+                ><a href="https://wa.me/919740570119" target="_blank"
+                  >+91 97405 70119</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex flex-between flex-wrap gap-2">
+          <span
+            >&copy; <span class="current-year"></span> Sandik Technologies Pvt.
+            Ltd. All rights reserved.</span
+          >
+          <!-- <span
+            >In technical collaboration with
+            <a href="https://www.et-system.de/en/" target="_blank"
+              >ET System Electronic GmbH, Germany</a
+            ></span
+          > -->
+          <span
+            >Web Solutions by
+            <a href="" target="_blank" rel="noopener">Render Infotech</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/919740570119" target="_blank" class="wa-fab"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <button class="scroll-top" id="scrollTopBtn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

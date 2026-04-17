@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Sandik Technologies — Reach our engineering and sales team for product enquiries, technical support, or to schedule a demonstration. Bengaluru, India."
+    />
+    <title>Contact Us | Sandik Technologies Pvt. Ltd.</title>
+    <link rel="icon" href="../assets/images/favicon-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="toast" id="toast"></div>
+
+    <!-- HEADER -->
+    <header id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="../assets/images/logo.jpeg"
+            alt="Sandik Technologies"
+            width="160"
+            height="42"
+        /></a>
+        <nav class="main-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </div>
+          <div class="nav-item">
+            <a href="products.html" class="nav-link"
+              >Products <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" /></svg
+            ></a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <div class="mega-col-title">DC Power</div>
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources LAB/HP</div>
+                    <div class="mega-link-desc">3kW–63kW</div>
+                  </div></a
+                ><a href="products.html?cat=dc-bidir" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Bidirectional</div>
+                    <div class="mega-link-desc">7kW–1.4MW</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">AC &amp; Loads</div>
+                <a href="products.html?cat=ac-sources" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources</div>
+                    <div class="mega-link-desc">1Ø &amp; 3Ø</div>
+                  </div></a
+                ><a href="products.html?cat=dc-loads" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Loads</div>
+                    <div class="mega-link-desc">ELP/DCW, NXI</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Simulators</div>
+                <a href="products.html?cat=battery-pv-sim" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">Battery &amp; PV Sim</div>
+                    <div class="mega-link-desc">Li-Ion, LFP, PV</div>
+                  </div></a
+                ><a href="products.html?cat=system-solutions" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">System Solutions</div>
+                    <div class="mega-link-desc">Turnkey, HIL</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="applications.html" class="nav-link">Applications</a>
+          </div>
+          <div class="nav-item">
+            <a href="service-support.html" class="nav-link"
+              >Service &amp; Support</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="career.html" class="nav-link">Career</a>
+          </div>
+        </nav>
+        <a
+          href="contact.html"
+          class="header-cta"
+          style="background: var(--dark-3); border-color: var(--red)"
+          ><i class="bi bi-envelope-fill"></i> Contact Us</a
+        >
+        <button class="hamburger" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Us</a>
+        <a href="products.html" class="mob-link">Products</a>
+        <a href="applications.html" class="mob-link">Applications</a>
+        <a href="service-support.html" class="mob-link"
+          >Service &amp; Support</a
+        >
+        <a href="career.html" class="mob-link">Career</a>
+        <a href="contact.html" class="mob-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Contact Us</span>
+        </nav>
+        <div class="page-hero-eyebrow">Get In Touch</div>
+        <h1>Contact Sandik<br />Technologies</h1>
+        <p>
+          Reach our engineering and sales team for product enquiries, technical
+          support, or to schedule a demonstration.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTACT CARDS -->
+    <section
+      class="section-sm"
+      style="background: var(--lighter); border-bottom: 1px solid var(--border)"
+    >
+      <div class="container">
+        <div class="contact-cards-grid">
+          <div class="contact-card reveal delay-100">
+            <div class="contact-card-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <h5>Our Office</h5>
+            <p>
+              134, 1st Floor, 2nd Main Road, East of NGEF Layout, Kasturi Nagar,
+              Bangalore, Karnataka – 560043
+            </p>
+          </div>
+          <div class="contact-card reveal delay-200">
+            <div class="contact-card-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <h5>Phone</h5>
+            <p>
+              <a
+                href="tel:+919972607819"
+                style="
+                  color: var(--black);
+                  font-weight: 600;
+                  font-size: 1.05rem;
+                "
+                >+91 99726 07819</a
+              ><br /><span
+                style="
+                  font-size: 0.72rem;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                "
+                >Sales &amp; Enquiries</span
+              >
+            </p>
+          </div>
+          <div class="contact-card reveal delay-300">
+            <div class="contact-card-icon">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <h5>Email</h5>
+            <p>
+              <a
+                href="mailto:sales@san-dik.com"
+                style="color: var(--black); font-weight: 600"
+                >sales@san-dik.com</a
+              ><br /><span
+                style="
+                  font-size: 0.72rem;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                "
+                >General Enquiries</span
+              >
+            </p>
+          </div>
+          <div class="contact-card reveal delay-400">
+            <div class="contact-card-icon" style="background: #25d366">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <h5>WhatsApp</h5>
+            <p>
+              <a
+                href="https://wa.me/919740570119"
+                target="_blank"
+                style="color: var(--black); font-weight: 600"
+                >+91 97405 70119</a
+              ><br />
+              <a
+                href="https://wa.me/919740570119"
+                target="_blank"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.3rem;
+                  margin-top: 0.5rem;
+                  background: #25d366;
+                  color: var(--white);
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.65rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  padding: 0.3rem 0.85rem;
+                  text-decoration: none;
+                "
+              >
+                <i class="bi bi-whatsapp"></i> Chat Now
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM + MAP -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Form side -->
+          <div class="reveal reveal-left">
+            <div class="section-label">Send a Message</div>
+            <h2 class="section-title mb-4">
+              We'd Love to <span>Hear From You</span>
+            </h2>
+
+            <div
+              id="contactSuccess"
+              style="
+                display: none;
+                background: #d4edda;
+                border: 1px solid #c3e6cb;
+                padding: 1rem 1.5rem;
+                margin-bottom: 1.5rem;
+                font-size: 0.9rem;
+                color: #155724;
+              "
+            >
+              <i class="bi bi-check-circle"></i> Thank you! Our team will
+              respond within one business day.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Full Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ct-name"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email Address *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="ct-email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Company / Organisation</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="company"
+                    placeholder="Your company name"
+                  />
+                </div>
+              </div>
+
+              <!-- Enquiry type radio -->
+              <div class="form-group">
+                <label class="form-label">Enquiry Type</label>
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.85rem;
+                    margin-top: 0.3rem;
+                  "
+                >
+                  <label
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      cursor: pointer;
+                      font-size: 0.88rem;
+                    "
+                    ><input
+                      type="radio"
+                      name="enquiry_type"
+                      value="Product Enquiry"
+                      checked
+                      style="accent-color: var(--red)"
+                    />
+                    Product Enquiry</label
+                  >
+                  <label
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      cursor: pointer;
+                      font-size: 0.88rem;
+                    "
+                    ><input
+                      type="radio"
+                      name="enquiry_type"
+                      value="Technical Support"
+                      style="accent-color: var(--red)"
+                    />
+                    Technical Support</label
+                  >
+                  <label
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      cursor: pointer;
+                      font-size: 0.88rem;
+                    "
+                    ><input
+                      type="radio"
+                      name="enquiry_type"
+                      value="Service / Repair"
+                      style="accent-color: var(--red)"
+                    />
+                    Service / Repair</label
+                  >
+                  <label
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      cursor: pointer;
+                      font-size: 0.88rem;
+                    "
+                    ><input
+                      type="radio"
+                      name="enquiry_type"
+                      value="Quotation Request"
+                      style="accent-color: var(--red)"
+                    />
+                    Quotation Request</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Product of Interest</label>
+                <select
+                  class="form-control"
+                  name="product_interest"
+                  id="productInterest"
+                >
+                  <option value="">Select category (optional)</option>
+                  <option value="DC Sources (LAB/SMP, LAB/HP, LAB/SLV)">
+                    DC Sources (LAB/SMP, LAB/HP, LAB/SLV)
+                  </option>
+                  <option value="AC Sources (Single Phase / Three Phase)">
+                    AC Sources (Single Phase / Three Phase)
+                  </option>
+                  <option value="DC Bidirectional (LAB/HPR, LAB/SLV E)">
+                    DC Bidirectional (LAB/HPR, LAB/SLV E)
+                  </option>
+                  <option value="AC Bidirectional">AC Bidirectional</option>
+                  <option value="DC Electronic Loads (ELP/DCW, ELP/DCM, NXI)">
+                    DC Electronic Loads (ELP/DCW, ELP/DCM, NXI)
+                  </option>
+                  <option value="AC/DC Universal Loads">
+                    AC/DC Universal Loads
+                  </option>
+                  <option value="Battery Simulators">Battery Simulators</option>
+                  <option value="PV Array Simulators">
+                    PV Array Simulators
+                  </option>
+                  <option value="System Integration / Turnkey Systems">
+                    System Integration / Turnkey Systems
+                  </option>
+                  <option value="General Enquiry">General Enquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Message *</label>
+                <textarea
+                  class="form-control"
+                  id="ct-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Describe your requirements, voltage/current ranges, application details, or any questions..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-red">
+                <i class="bi bi-send"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Map + Info side -->
+          <div class="reveal reveal-right">
+            <!-- Google Maps Embed -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.66607647419!2d77.66145!3d13.00030!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17003dbb3a51%3A0x86d5432e89481242!2sET%20System%20(India)!5e0!3m2!1sen!2sin!4v1713200000000!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Sandik Technologies Office Location"
+              >
+              </iframe>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="business-hours-card">
+              <div class="bh-title">Business Hours</div>
+              <div class="bh-row">
+                <span>Monday – Friday</span><span>9:30 AM – 6:00 PM</span>
+              </div>
+              <div class="bh-row">
+                <span>Saturday</span><span>10:00 AM – 2:00 PM</span>
+              </div>
+              <div class="bh-row closed">
+                <span>Sunday</span><span>Closed</span>
+              </div>
+            </div>
+
+            <!-- Info note -->
+            <div
+              style="
+                padding: 1rem 1.25rem;
+                background: var(--lighter);
+                border: 1px solid var(--border);
+              "
+            >
+              <p
+                style="
+                  font-size: 0.84rem;
+                  color: var(--mid);
+                  margin: 0;
+                  line-height: 1.75;
+                "
+              >
+                <i class="bi bi-info-circle" style="color: var(--red)"></i
+                >&nbsp; For urgent technical support, please call us directly or
+                use WhatsApp for a faster response. We typically respond to all
+                enquiries within the same business day.
+              </p>
+            </div>
+
+            <!-- Direct actions -->
+            <div
+              style="
+                margin-top: 1.25rem;
+                display: flex;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+              "
+            >
+              <a href="tel:+919972607819" class="btn btn-red btn-sm"
+                ><i class="bi bi-telephone"></i> Call Now</a
+              >
+              <a
+                href="https://wa.me/919740570119"
+                target="_blank"
+                class="btn btn-sm"
+                style="
+                  background: #25d366;
+                  color: var(--white);
+                  border-color: #25d366;
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.75rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  padding: 0.55rem 1.3rem;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                "
+                ><i class="bi bi-whatsapp"></i> WhatsApp</a
+              >
+              <a
+                href="https://www.google.com/maps/place/ET+System+(India)/@13.0002992,77.6614706"
+                target="_blank"
+                class="btn btn-sm btn-dark"
+                ><i class="bi bi-map"></i> Get Directions</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="footer-brand">
+                <img
+                  src="../assets/images/logo.jpeg"
+                  alt="Sandik Technologies"
+                  width="160"
+                  height="44"
+                />
+              </div>
+              <p class="footer-tagline">
+                Specialized engineering delivering high-performance programmable
+                power supply solutions for industrial and R&D sectors.
+              </p>
+              <div class="footer-socials">
+                <a
+                  href="https://wa.me/919740570119"
+                  target="_blank"
+                  class="social-btn"
+                  style="
+                    background: #25d366;
+                    border-color: #25d366;
+                    color: white;
+                  "
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="mailto:sales@san-dik.com" class="social-btn"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a href="tel:+919972607819" class="social-btn"
+                  ><i class="bi bi-telephone"></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer-heading">Quick Links</div>
+              <nav class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Products</a>
+                <a href="applications.html" class="footer-link">Applications</a>
+                <a href="service-support.html" class="footer-link"
+                  >Service &amp; Support</a
+                >
+                <a href="career.html" class="footer-link">Career</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Products</div>
+              <nav class="footer-links">
+                <a href="products.html?cat=dc-sources" class="footer-link"
+                  >DC Sources</a
+                >
+                <a href="products.html?cat=ac-sources" class="footer-link"
+                  >AC Sources</a
+                >
+                <a href="products.html?cat=dc-bidir" class="footer-link"
+                  >DC Bidirectional</a
+                >
+                <a href="products.html?cat=dc-loads" class="footer-link"
+                  >DC Loads</a
+                >
+                <a href="products.html?cat=battery-pv-sim" class="footer-link"
+                  >Battery &amp; PV Simulators</a
+                >
+                <a href="products.html?cat=system-solutions" class="footer-link"
+                  >System Integration</a
+                >
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Contact Details</div>
+              <div class="footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span
+                  >134, 1st Floor, 2nd Main Road, East of NGEF Layout, Kasturi
+                  Nagar, Bangalore – 560043</span
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i
+                ><a href="tel:+919972607819">+91 99726 07819</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i
+                ><a href="mailto:sales@san-dik.com">sales@san-dik.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-whatsapp" style="color: #25d366"></i
+                ><a href="https://wa.me/919740570119" target="_blank"
+                  >+91 97405 70119 (WhatsApp)</a
+                >
+              </div>
+              <div style="margin-top: 0.75rem">
+                <a
+                  href="https://www.google.com/maps/place/ET+System+(India)/@13.0002992,77.6614706"
+                  target="_blank"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    color: var(--red);
+                    font-family: var(--font-heading);
+                    font-weight: 700;
+                    font-size: 0.72rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                  "
+                  ><i class="bi bi-map"></i> View on Google Maps</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex flex-between flex-wrap gap-2">
+          <span
+            >&copy; <span class="current-year"></span> Sandik Technologies Pvt.
+            Ltd. All rights reserved.</span
+          >
+          <!-- <span
+            >In technical collaboration with
+            <a href="https://www.et-system.de/en/" target="_blank"
+              >ET System Electronic GmbH, Germany</a
+            ></span
+          > -->
+          <span
+            >Web Solutions by
+            <a href="" target="_blank" rel="noopener">Render Infotech</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/919740570119" target="_blank" class="wa-fab"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <button class="scroll-top" id="scrollTopBtn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

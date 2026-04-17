@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Career opportunities at Sandik Technologies — Sales Engineer, Application Engineer, Service Technician roles in Bengaluru."
+    />
+    <title>Career | Sandik Technologies Pvt. Ltd.</title>
+    <link rel="icon" href="../assets/images/favicon-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="toast" id="toast"></div>
+
+    <!-- HEADER -->
+    <header id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="../assets/images/logo.jpeg"
+            alt="Sandik Technologies"
+            width="160"
+            height="42"
+        /></a>
+        <nav class="main-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </div>
+          <div class="nav-item">
+            <a href="products.html" class="nav-link"
+              >Products <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" /></svg
+            ></a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <div class="mega-col-title">DC Power</div>
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources LAB/HP</div>
+                    <div class="mega-link-desc">3kW–63kW</div>
+                  </div></a
+                ><a href="products.html?cat=dc-bidir" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Bidirectional</div>
+                    <div class="mega-link-desc">7kW–1.4MW</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">AC &amp; Loads</div>
+                <a href="products.html?cat=ac-sources" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources</div>
+                    <div class="mega-link-desc">1Ø &amp; 3Ø</div>
+                  </div></a
+                ><a href="products.html?cat=dc-loads" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Loads</div>
+                    <div class="mega-link-desc">ELP/DCW, NXI</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Simulators</div>
+                <a href="products.html?cat=battery-pv-sim" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">Battery &amp; PV Sim</div>
+                    <div class="mega-link-desc">Li-Ion, LFP, PV</div>
+                  </div></a
+                ><a href="products.html?cat=system-solutions" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">System Solutions</div>
+                    <div class="mega-link-desc">Turnkey, HIL</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="applications.html" class="nav-link">Applications</a>
+          </div>
+          <div class="nav-item">
+            <a href="service-support.html" class="nav-link"
+              >Service &amp; Support</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="career.html" class="nav-link active">Career</a>
+          </div>
+        </nav>
+        <a href="contact.html" class="header-cta"
+          ><i class="bi bi-envelope-fill"></i> Contact Us</a
+        >
+        <button class="hamburger" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Us</a>
+        <a href="products.html" class="mob-link">Products</a>
+        <a href="applications.html" class="mob-link">Applications</a>
+        <a href="service-support.html" class="mob-link"
+          >Service &amp; Support</a
+        >
+        <a href="career.html" class="mob-link">Career</a>
+        <a href="contact.html" class="mob-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Career</span>
+        </nav>
+        <div class="page-hero-eyebrow">Join Our Team</div>
+        <h1>Careers at Sandik<br />Technologies</h1>
+        <p>
+          Be part of a specialized engineering team delivering precision power
+          solutions with German technology across India.
+        </p>
+      </div>
+    </div>
+
+    <!-- PERKS -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <div class="section-label" style="justify-content: center">
+            Why Work With Us
+          </div>
+          <h2 class="section-title">Grow With <span>Sandik</span></h2>
+        </div>
+        <div class="perks-grid">
+          <div class="perk-card reveal delay-100">
+            <div class="perk-icon">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <div>
+              <div class="perk-title">Cutting-Edge Technology</div>
+              <p class="perk-desc">
+                Work with state-of-the-art German-engineered programmable power
+                systems used by leading global companies.
+              </p>
+            </div>
+          </div>
+          <div class="perk-card reveal delay-200">
+            <div class="perk-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <div>
+              <div class="perk-title">Clear Career Growth</div>
+              <p class="perk-desc">
+                Defined paths across sales engineering, application engineering,
+                and technical support with mentorship.
+              </p>
+            </div>
+          </div>
+          <div class="perk-card reveal delay-300">
+            <div class="perk-icon"><i class="bi bi-globe"></i></div>
+            <div>
+              <div class="perk-title">Global Exposure</div>
+              <p class="perk-desc">
+                Direct collaboration and technical training with ET System
+                Electronic GmbH, Germany — global standards.
+              </p>
+            </div>
+          </div>
+          <div class="perk-card reveal delay-400">
+            <div class="perk-icon"><i class="bi bi-people-fill"></i></div>
+            <div>
+              <div class="perk-title">Expert Team Culture</div>
+              <p class="perk-desc">
+                Work alongside experienced power electronics engineers in a
+                collaborative, engineering-driven environment.
+              </p>
+            </div>
+          </div>
+          <div class="perk-card reveal delay-100">
+            <div class="perk-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <div class="perk-title">Learning &amp; Certification</div>
+              <p class="perk-desc">
+                Technical training, product certifications, and access to the
+                latest developments in power electronics.
+              </p>
+            </div>
+          </div>
+          <div class="perk-card reveal delay-200">
+            <div class="perk-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="perk-title">Bengaluru Location</div>
+              <p class="perk-desc">
+                Modern office in Kasturi Nagar, Bengaluru — connected,
+                accessible, and in India's technology hub.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENT OPENINGS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="mb-5 reveal">
+          <div class="section-label">Current Openings</div>
+          <h2 class="section-title">Open <span>Positions</span></h2>
+        </div>
+
+        <!-- Job 1 -->
+        <div class="job-card active reveal" id="job1">
+          <div class="job-header" onclick="toggleJobCard('job1')">
+            <div>
+              <div class="job-title">Sales Engineer — Power Electronics</div>
+              <div class="job-dept">Sales &amp; Business Development</div>
+              <div class="job-tags">
+                <span class="job-tag job-tag-red">Full Time</span>
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-geo-alt"></i> Bengaluru</span
+                >
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-briefcase"></i> 2–5 Years</span
+                >
+              </div>
+            </div>
+            <button
+              class="job-apply-btn"
+              onclick="
+                event.stopPropagation();
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' });
+              "
+            >
+              Apply Now
+            </button>
+          </div>
+          <div class="job-body">
+            <p
+              style="
+                font-size: 0.9rem;
+                color: var(--mid);
+                line-height: 1.85;
+                margin-bottom: 1.25rem;
+              "
+            >
+              We are looking for a motivated Sales Engineer with a background in
+              power electronics or electrical engineering to drive sales of our
+              programmable power supply products across South India and develop
+              new business across industrial and R&D sectors.
+            </p>
+            <div class="jd-heading">Key Responsibilities</div>
+            <ul class="jd-list">
+              <li>
+                Identify and develop new business opportunities in industrial,
+                EV, aerospace, and R&amp;D sectors
+              </li>
+              <li>
+                Conduct product demonstrations and technical presentations to
+                customers and OEMs
+              </li>
+              <li>
+                Prepare and follow up on technical proposals, BOQs, and
+                quotations
+              </li>
+              <li>
+                Maintain strong relationships with key accounts and support
+                repeat business growth
+              </li>
+              <li>
+                Collaborate with application engineers to understand and address
+                customer requirements
+              </li>
+              <li>
+                Attend trade exhibitions and technical seminars as required
+              </li>
+            </ul>
+            <div class="jd-heading">Requirements</div>
+            <ul class="jd-list">
+              <li>
+                B.E./B.Tech in Electrical, Electronics, Power Electronics, or
+                Instrumentation Engineering
+              </li>
+              <li>
+                2–5 years of experience in technical sales, field applications,
+                or power electronics
+              </li>
+              <li>
+                Knowledge of programmable power supplies, test &amp; measurement
+                equipment preferred
+              </li>
+              <li>
+                Strong communication, presentation, and negotiation skills
+              </li>
+              <li>Willingness to travel across South India as required</li>
+              <li>Proficiency in CRM tools and MS Office</li>
+            </ul>
+            <button
+              class="job-apply-btn mt-3"
+              onclick="
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              Apply for This Position
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job-card reveal" id="job2">
+          <div class="job-header" onclick="toggleJobCard('job2')">
+            <div>
+              <div class="job-title">Application Engineer — Power Systems</div>
+              <div class="job-dept">Engineering &amp; Applications</div>
+              <div class="job-tags">
+                <span class="job-tag job-tag-red">Full Time</span>
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-geo-alt"></i> Bengaluru</span
+                >
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-briefcase"></i> 1–4 Years</span
+                >
+              </div>
+            </div>
+            <button
+              class="job-apply-btn"
+              onclick="
+                event.stopPropagation();
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' });
+              "
+            >
+              Apply Now
+            </button>
+          </div>
+          <div class="job-body">
+            <p
+              style="
+                font-size: 0.9rem;
+                color: var(--mid);
+                line-height: 1.85;
+                margin-bottom: 1.25rem;
+              "
+            >
+              We seek an Application Engineer to provide pre-sales and
+              post-sales technical support for our complete range of
+              programmable AC/DC power supplies, electronic loads, and battery
+              simulators.
+            </p>
+            <div class="jd-heading">Key Responsibilities</div>
+            <ul class="jd-list">
+              <li>
+                Provide application engineering support to customers during
+                evaluation, integration, and commissioning
+              </li>
+              <li>
+                Conduct product demonstrations, POC setups, and technical
+                training sessions
+              </li>
+              <li>
+                Develop application notes, test procedures, and technical
+                documentation
+              </li>
+              <li>
+                Coordinate with ET System Germany for technical escalations and
+                product updates
+              </li>
+              <li>
+                Support the sales team with technical specifications and tender
+                responses
+              </li>
+              <li>
+                Perform on-site commissioning and troubleshooting at customer
+                facilities
+              </li>
+            </ul>
+            <div class="jd-heading">Requirements</div>
+            <ul class="jd-list">
+              <li>
+                B.E./B.Tech in Electrical, Electronics, or Power Electronics
+                Engineering
+              </li>
+              <li>
+                1–4 years in power electronics applications, test systems, or
+                R&amp;D
+              </li>
+              <li>
+                Hands-on experience with power supplies, oscilloscopes, and test
+                benches
+              </li>
+              <li>
+                Familiarity with USB, LAN, CAN, RS232, GPIB communication
+                interfaces
+              </li>
+              <li>
+                Good analytical and problem-solving skills; ability to work
+                independently
+              </li>
+            </ul>
+            <button
+              class="job-apply-btn mt-3"
+              onclick="
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              Apply for This Position
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job-card reveal" id="job3">
+          <div class="job-header" onclick="toggleJobCard('job3')">
+            <div>
+              <div class="job-title">Service &amp; Repair Technician</div>
+              <div class="job-dept">Service &amp; Support</div>
+              <div class="job-tags">
+                <span class="job-tag job-tag-red">Full Time</span>
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-geo-alt"></i> Bengaluru</span
+                >
+                <span class="job-tag job-tag-gray"
+                  ><i class="bi bi-briefcase"></i> 2–6 Years</span
+                >
+              </div>
+            </div>
+            <button
+              class="job-apply-btn"
+              onclick="
+                event.stopPropagation();
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' });
+              "
+            >
+              Apply Now
+            </button>
+          </div>
+          <div class="job-body">
+            <p
+              style="
+                font-size: 0.9rem;
+                color: var(--mid);
+                line-height: 1.85;
+                margin-bottom: 1.25rem;
+              "
+            >
+              We are hiring a Service Technician to handle in-house and on-site
+              repair, calibration, and preventive maintenance of our
+              programmable power supply products across customer sites in India.
+            </p>
+            <div class="jd-heading">Key Responsibilities</div>
+            <ul class="jd-list">
+              <li>
+                Perform diagnosis, repair, and calibration of programmable DC/AC
+                sources and electronic loads
+              </li>
+              <li>
+                Execute preventive and corrective maintenance at customer sites
+              </li>
+              <li>
+                Document service reports, fault analysis, and corrective action
+                records
+              </li>
+              <li>
+                Manage spare parts inventory and coordinate procurement with our
+                Germany partner
+              </li>
+              <li>
+                Support customers with warranty and AMC (Annual Maintenance
+                Contract) servicing
+              </li>
+            </ul>
+            <div class="jd-heading">Requirements</div>
+            <ul class="jd-list">
+              <li>
+                Diploma or B.E./B.Tech in Electronics, Electrical, or
+                Instrumentation Engineering
+              </li>
+              <li>
+                2–6 years of hands-on experience servicing power electronics or
+                laboratory equipment
+              </li>
+              <li>
+                Knowledge of analog and digital circuit troubleshooting,
+                PCB-level repair
+              </li>
+              <li>
+                Experience with soldering, component-level repair, and
+                electrical safety procedures
+              </li>
+              <li>
+                Valid two-wheeler driving licence preferred for customer site
+                visits
+              </li>
+            </ul>
+            <button
+              class="job-apply-btn mt-3"
+              onclick="
+                document
+                  .getElementById('applySection')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              Apply for This Position
+            </button>
+          </div>
+        </div>
+
+        <!-- Open application note -->
+        <div
+          style="
+            margin-top: 1.5rem;
+            padding: 1.25rem 1.75rem;
+            background: var(--dark-1);
+            border-left: 4px solid var(--red);
+          "
+          class="reveal"
+        >
+          <div
+            style="
+              font-family: var(--font-heading);
+              font-weight: 700;
+              font-size: 0.7rem;
+              letter-spacing: 0.18em;
+              text-transform: uppercase;
+              color: var(--red);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Don't see a suitable role?
+          </div>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.55);
+              font-size: 0.88rem;
+              margin: 0;
+            "
+          >
+            We welcome open applications from talented engineers and sales
+            professionals. Send your CV directly to
+            <a href="mailto:sales@san-dik.com" style="color: var(--red)"
+              >sales@san-dik.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+    <section class="section" id="applySection">
+      <div class="container">
+        <div
+          style="
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 3.5rem;
+          "
+          class="reveal"
+        >
+          <div class="section-label mb-2">Apply Now</div>
+          <h2 class="section-title mb-2">
+            Submit Your <span>Application</span>
+          </h2>
+          <div class="red-rule"></div>
+
+          <div
+            id="careerSuccess"
+            style="
+              display: none;
+              background: #d4edda;
+              border: 1px solid #c3e6cb;
+              padding: 1rem 1.5rem;
+              margin-bottom: 1.5rem;
+              font-size: 0.9rem;
+              color: #155724;
+            "
+          >
+            <i class="bi bi-check-circle"></i> Your application has been
+            submitted successfully. We will be in touch shortly.
+          </div>
+
+          <form id="careerForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phone"
+                  placeholder="+91 XXXXX XXXXX"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Position Applied For *</label>
+                <select class="form-control" name="position" required>
+                  <option value="">Select a position</option>
+                  <option value="Sales Engineer">
+                    Sales Engineer — Power Electronics
+                  </option>
+                  <option value="Application Engineer">
+                    Application Engineer — Power Systems
+                  </option>
+                  <option value="Service Technician">
+                    Service &amp; Repair Technician
+                  </option>
+                  <option value="Open Application">Open Application</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Total Experience</label>
+                <select class="form-control" name="experience">
+                  <option value="">Select experience</option>
+                  <option>Fresher (0 years)</option>
+                  <option>1–2 years</option>
+                  <option>2–5 years</option>
+                  <option>5–10 years</option>
+                  <option>10+ years</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Current Company / College</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="company"
+                  placeholder="Current employer or institution"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Upload CV (PDF / DOC, max 5MB) *</label>
+              <input
+                type="file"
+                class="form-control"
+                name="cv"
+                accept=".pdf,.doc,.docx"
+                style="padding: 0.65rem"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Cover Letter / Message</label>
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Tell us about yourself, your experience, and why you want to join Sandik Technologies..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-red">
+              <i class="bi bi-send"></i> Submit Application
+            </button>
+            <p style="font-size: 0.78rem; color: var(--mid); margin-top: 1rem">
+              By submitting, you consent to Sandik Technologies processing your
+              data for recruitment purposes only.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="footer-brand">
+                <img
+                  src="../assets/images/logo.jpeg"
+                  alt="Sandik Technologies"
+                  width="160"
+                  height="44"
+                />
+              </div>
+              <p class="footer-tagline">
+                Specialized engineering delivering high-performance programmable
+                power supply solutions for industrial and R&D sectors.
+              </p>
+              <div class="footer-socials">
+                <a
+                  href="https://wa.me/919740570119"
+                  target="_blank"
+                  class="social-btn"
+                  style="
+                    background: #25d366;
+                    border-color: #25d366;
+                    color: white;
+                  "
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="mailto:sales@san-dik.com" class="social-btn"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a href="tel:+919972607819" class="social-btn"
+                  ><i class="bi bi-telephone"></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer-heading">Quick Links</div>
+              <nav class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Products</a>
+                <a href="applications.html" class="footer-link">Applications</a>
+                <a href="service-support.html" class="footer-link"
+                  >Service &amp; Support</a
+                >
+                <a href="career.html" class="footer-link">Career</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Open Positions</div>
+              <nav class="footer-links">
+                <a href="#job1" class="footer-link">Sales Engineer</a>
+                <a href="#job2" class="footer-link">Application Engineer</a>
+                <a href="#job3" class="footer-link">Service Technician</a>
+                <a href="#applySection" class="footer-link">Open Application</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Contact Us</div>
+              <div class="footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span
+                  >134, 1st Floor, 2nd Main Road, Kasturi Nagar, Bangalore –
+                  560043</span
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i
+                ><a href="tel:+919972607819">+91 99726 07819</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i
+                ><a href="mailto:sales@san-dik.com">sales@san-dik.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex flex-between flex-wrap gap-2">
+          <span
+            >&copy; <span class="current-year"></span> Sandik Technologies Pvt.
+            Ltd. All rights reserved.</span
+          >
+          <!-- <span
+            >In technical collaboration with
+            <a href="https://www.et-system.de/en/" target="_blank"
+              >ET System Electronic GmbH, Germany</a
+            ></span
+          > -->
+          <span
+            >Web Solutions by
+            <a href="" target="_blank" rel="noopener">Render Infotech</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/919740570119" target="_blank" class="wa-fab"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <button class="scroll-top" id="scrollTopBtn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="../js/main.js"></script>
+    <script>
+      function toggleJobCard(id) {
+        const card = document.getElementById(id);
+        const wasActive = card.classList.contains("active");
+        document
+          .querySelectorAll(".job-card")
+          .forEach((c) => c.classList.remove("active"));
+        if (!wasActive) card.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

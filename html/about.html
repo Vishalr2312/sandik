@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Sandik Technologies — Specialized in programmable power supply solutions with technical collaboration with ET System Electronic GmbH, Germany."
+    />
+    <title>About Us | Sandik Technologies Pvt. Ltd.</title>
+    <link rel="icon" href="../assets/images/favicon-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="toast" id="toast"></div>
+
+    <header id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="../assets/images/logo.jpeg"
+            alt="Sandik Technologies"
+            width="160"
+            height="42"
+        /></a>
+        <nav class="main-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link active">About Us</a>
+          </div>
+          <div class="nav-item">
+            <a href="products.html" class="nav-link"
+              >Products <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" /></svg
+            ></a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <div class="mega-col-title">DC Power</div>
+                <a
+                  href="products.html?cat=dc-sources&sub=lab-smp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/SMP</div>
+                    <div class="mega-link-desc">Switching, 750W–2.4kW</div>
+                  </div></a
+                ><a
+                  href="products.html?cat=dc-sources&sub=lab-hp"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Sources — LAB/HP</div>
+                    <div class="mega-link-desc">High Power, 3kW–63kW</div>
+                  </div></a
+                ><a
+                  href="products.html?cat=dc-bidir&sub=lab-hpr"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Bidirectional</div>
+                    <div class="mega-link-desc">Regenerative, 7kW–1.4MW</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">AC Power</div>
+                <a href="products.html?cat=ac-sources&sub=1ph" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources — Single Phase</div>
+                    <div class="mega-link-desc">Programmable, up to 6kVA</div>
+                  </div></a
+                ><a
+                  href="products.html?cat=ac-sources&sub=3ph"
+                  class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Sources — Three Phase</div>
+                    <div class="mega-link-desc">Up to 2000kVA</div>
+                  </div></a
+                ><a href="products.html?cat=ac-bidir" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">AC Bidirectional</div>
+                    <div class="mega-link-desc">Source &amp; Sink, regen</div>
+                  </div></a
+                >
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Loads &amp; Simulators</div>
+                <a href="products.html?cat=dc-loads" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">DC Electronic Loads</div>
+                    <div class="mega-link-desc">High Speed, Multi-Channel</div>
+                  </div></a
+                ><a href="products.html?cat=battery-pv-sim" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">
+                      Battery &amp; PV Simulators
+                    </div>
+                    <div class="mega-link-desc">Li-Ion, LFP, PV I-V curve</div>
+                  </div></a
+                ><a href="products.html?cat=system-solutions" class="mega-link"
+                  ><div>
+                    <div class="mega-link-title">System Integration</div>
+                    <div class="mega-link-desc">Turnkey, HIL, Battery Test</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="applications.html" class="nav-link">Applications</a>
+          </div>
+          <div class="nav-item">
+            <a href="service-support.html" class="nav-link"
+              >Service &amp; Support</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="career.html" class="nav-link">Career</a>
+          </div>
+        </nav>
+        <a href="contact.html" class="header-cta"
+          ><i class="bi bi-envelope-fill"></i> Contact Us</a
+        >
+        <button class="hamburger" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Us</a>
+        <a href="products.html" class="mob-link">Products</a>
+        <a href="applications.html" class="mob-link">Applications</a>
+        <a href="service-support.html" class="mob-link"
+          >Service &amp; Support</a
+        >
+        <a href="career.html" class="mob-link">Career</a>
+        <a href="contact.html" class="mob-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>About Us</span>
+        </nav>
+        <div class="page-hero-eyebrow">Who We Are</div>
+        <h1>About Sandik<br />Technologies</h1>
+        <p>Specialized engineering · German technology · India-wide support</p>
+      </div>
+    </div>
+
+    <!-- ABOUT MAIN -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="reveal reveal-left">
+            <div class="section-label">Our Story</div>
+            <h2 class="section-title">
+              Built on German<br /><span>Engineering</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p
+              style="
+                font-size: 0.97rem;
+                line-height: 1.95;
+                color: var(--mid);
+                margin-bottom: 1.25rem;
+              "
+            >
+              Sandik Technologies Pvt. Ltd. is a specialized engineering company
+              focused on delivering high-performance programmable AC/DC power
+              supply solutions and advanced testing systems to industrial and
+              R&D sectors. Established on October 29, 2025, the company builds
+              on a strong foundation of technical expertise and industry
+              experience, evolving from earlier operations under ET System
+              India.
+            </p>
+            <p
+              style="
+                font-size: 0.93rem;
+                line-height: 1.95;
+                color: var(--mid);
+                margin-bottom: 1.25rem;
+              "
+            >
+              We actively support research and development initiatives in
+              collaboration with ET System Electronic GmbH, Germany, delivering
+              reliable solutions tailored to complex testing and power
+              requirements. Our offerings include sales, application support,
+              and servicing of programmable power supplies, ensuring high
+              efficiency, accuracy, and compliance with global standards.
+            </p>
+            <p style="font-size: 0.93rem; line-height: 1.95; color: var(--mid)">
+              At Sandik Technologies, we believe that advanced technology
+              combined with strong technical support is key to delivering
+              effective solutions. Our team is committed to providing complete
+              support — from product selection and configuration to after-sales
+              service — ensuring long-term reliability and customer
+              satisfaction.
+            </p>
+          </div>
+          <div class="reveal reveal-right">
+            <div class="about-stats-grid mb-4">
+              <div class="about-stat-block" style="background: var(--dark-1)">
+                <span class="about-stat-num" style="color: var(--red)"
+                  >2025</span
+                >
+                <span
+                  class="about-stat-lbl"
+                  style="color: rgba(255, 255, 255, 0.4)"
+                  >Founded</span
+                >
+              </div>
+              <div class="about-stat-block" style="background: var(--red)">
+                <span class="about-stat-num" style="color: var(--white)"
+                  >8+</span
+                >
+                <span
+                  class="about-stat-lbl"
+                  style="color: rgba(255, 255, 255, 0.8)"
+                  >Categories</span
+                >
+              </div>
+              <div class="about-stat-block">
+                <span class="about-stat-num" style="color: var(--dark-1)"
+                  >30+</span
+                >
+                <span class="about-stat-lbl">Product Series</span>
+              </div>
+              <div class="about-stat-block" style="background: var(--dark-1)">
+                <span class="about-stat-num" style="color: var(--white)"
+                  >🇩🇪</span
+                >
+                <span
+                  class="about-stat-lbl"
+                  style="color: rgba(255, 255, 255, 0.4)"
+                  >German Partner</span
+                >
+              </div>
+            </div>
+            <!-- ET System Info box -->
+            <div
+              style="
+                padding: 2rem;
+                background: var(--lighter);
+                border: 1px solid var(--border);
+                border-left: 4px solid var(--red);
+              "
+            >
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.68rem;
+                  letter-spacing: 0.18em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                ET System Electronic GmbH
+              </div>
+              <p
+                style="
+                  font-size: 0.88rem;
+                  line-height: 1.85;
+                  color: var(--mid);
+                  margin-bottom: 1rem;
+                "
+              >
+                Founded 1986 in Altlußheim, Germany. ISO 9001:2015 certified
+                manufacturer of programmable power electronics. Customers
+                include Airbus, BMW, Daimler, Volkswagen, NASA, Siemens,
+                Rolls-Royce, Samsung, Nokia, and hundreds of global companies.
+              </p>
+              <a
+                href="https://www.et-system.de/en/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-dark btn-sm"
+              >
+                <i class="bi bi-box-arrow-up-right"></i> Visit ET System Website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION VISION VALUES -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <div class="section-label" style="justify-content: center">
+            Our Foundation
+          </div>
+          <h2 class="section-title">
+            Mission, Vision &amp; <span>Values</span>
+          </h2>
+        </div>
+        <div class="mission-grid">
+          <div class="mission-card reveal delay-100">
+            <i class="mission-card-icon bi bi-bullseye"></i>
+            <h4>Our Mission</h4>
+            <p>
+              To deliver complete power testing solutions — from product
+              selection and configuration to commissioning and after-sales
+              service — ensuring long-term reliability and customer satisfaction
+              through advanced German technology with strong local engineering
+              support.
+            </p>
+          </div>
+          <div class="mission-card reveal delay-200">
+            <i class="mission-card-icon bi bi-eye"></i>
+            <h4>Our Vision</h4>
+            <p>
+              To be India's most trusted partner for programmable power supply
+              solutions, enabling innovation across EV, renewable energy,
+              aerospace, defence, and R&D sectors by combining ET System's
+              world-class products with Sandik's local expertise.
+            </p>
+          </div>
+          <div class="mission-card reveal delay-300">
+            <i class="mission-card-icon bi bi-gem"></i>
+            <h4>Our Values</h4>
+            <p>
+              Engineering excellence, customer-first approach, technical
+              integrity, and continuous improvement drive everything we do. We
+              believe the combination of advanced technology and strong
+              application support creates lasting partnerships built on trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GERMAN PARTNERSHIP -->
+    <section class="section section-dark">
+      <div class="container" style="position: relative; z-index: 1">
+        <div class="grid-2">
+          <div class="reveal reveal-left">
+            <div class="section-label">Technical Partnership</div>
+            <h2 class="section-title light">
+              Powered by <span>German Engineering</span>
+            </h2>
+            <div class="red-rule"></div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.55);
+                font-size: 0.95rem;
+                line-height: 1.95;
+                margin-bottom: 1.5rem;
+              "
+            >
+              ET System Electronic GmbH has been manufacturing high-precision
+              laboratory power electronics since 1986. With their ISO 9001:2015
+              certification and an in-house manufacturing depth that spans metal
+              processing to EMC compliance, they deliver the highest quality
+              power electronics to customers worldwide.
+            </p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.45);
+                font-size: 0.9rem;
+                line-height: 1.95;
+                margin-bottom: 2rem;
+              "
+            >
+              As India's authorized technical representative, Sandik
+              Technologies brings this same German precision and reliability to
+              Indian customers — with full local application support,
+              commissioning, and service.
+            </p>
+            <a
+              href="https://www.et-system.de/en/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-red"
+            >
+              <i class="bi bi-box-arrow-up-right"></i> Visit ET System Website
+            </a>
+          </div>
+          <div class="reveal reveal-right">
+            <div
+              style="
+                padding: 3rem;
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                text-align: center;
+              "
+            >
+              <div style="font-size: 5rem; margin-bottom: 1.5rem">🇩🇪</div>
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 1.9rem;
+                  color: var(--white);
+                  letter-spacing: 0.06em;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                ET System Electronic GmbH
+              </div>
+              <div
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 0.72rem;
+                  letter-spacing: 0.18em;
+                  text-transform: uppercase;
+                  color: var(--red);
+                  margin-bottom: 1.75rem;
+                "
+              >
+                Altlußheim, Germany — Since 1986
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 1px;
+                  background: rgba(255, 255, 255, 0.06);
+                "
+              >
+                <div style="background: var(--dark-2); padding: 1.25rem">
+                  <div
+                    style="
+                      font-family: var(--font-display);
+                      font-size: 1.8rem;
+                      color: var(--red);
+                    "
+                  >
+                    35+
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.62rem;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: rgba(255, 255, 255, 0.3);
+                      font-family: var(--font-heading);
+                      font-weight: 700;
+                    "
+                  >
+                    Years Exp.
+                  </div>
+                </div>
+                <div style="background: var(--dark-2); padding: 1.25rem">
+                  <div
+                    style="
+                      font-family: var(--font-display);
+                      font-size: 1.8rem;
+                      color: var(--red);
+                    "
+                  >
+                    ISO
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.62rem;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: rgba(255, 255, 255, 0.3);
+                      font-family: var(--font-heading);
+                      font-weight: 700;
+                    "
+                  >
+                    9001:2015
+                  </div>
+                </div>
+                <div style="background: var(--dark-2); padding: 1.25rem">
+                  <div
+                    style="
+                      font-family: var(--font-display);
+                      font-size: 1.8rem;
+                      color: var(--red);
+                    "
+                  >
+                    IN
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.62rem;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: rgba(255, 255, 255, 0.3);
+                      font-family: var(--font-heading);
+                      font-weight: 700;
+                    "
+                  >
+                    India Rep.
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  margin-top: 1.5rem;
+                  padding-top: 1.5rem;
+                  border-top: 1px solid rgba(255, 255, 255, 0.06);
+                "
+              >
+                <p
+                  style="
+                    color: rgba(255, 255, 255, 0.35);
+                    font-size: 0.85rem;
+                    line-height: 1.8;
+                    margin: 0;
+                  "
+                >
+                  Customers include Airbus, BMW, Volkswagen, Daimler, NASA,
+                  Siemens, Rolls-Royce, Samsung, Nokia, and hundreds of global
+                  companies across 50+ countries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section-red">
+      <div
+        class="container text-center reveal"
+        style="position: relative; z-index: 1"
+      >
+        <h2
+          style="
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            color: var(--white);
+            letter-spacing: 0.04em;
+            margin-bottom: 1.25rem;
+          "
+        >
+          Partner With Sandik Technologies
+        </h2>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.85;
+          "
+        >
+          Get in touch to discuss how our power solutions can meet your
+          engineering and R&D requirements.
+        </p>
+        <a href="contact.html" class="btn btn-white" style="margin-right: 1rem"
+          ><i class="bi bi-envelope"></i> Contact Us</a
+        >
+        <a href="career.html" class="btn btn-outline"
+          ><i class="bi bi-people"></i> Join Our Team</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="footer-brand">
+                <img
+                  src="../assets/images/logo.jpeg"
+                  alt="Sandik Technologies"
+                  width="160"
+                  height="44"
+                />
+              </div>
+              <p class="footer-tagline">
+                Specialized engineering company delivering high-performance
+                programmable AC/DC power supply solutions for industrial and R&D
+                sectors.
+              </p>
+              <div class="footer-socials">
+                <a
+                  href="https://wa.me/919740570119"
+                  target="_blank"
+                  class="social-btn"
+                  style="
+                    background: #25d366;
+                    border-color: #25d366;
+                    color: white;
+                  "
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="mailto:sales@san-dik.com" class="social-btn"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a href="tel:+919972607819" class="social-btn"
+                  ><i class="bi bi-telephone"></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer-heading">Quick Links</div>
+              <nav class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Products</a>
+                <a href="applications.html" class="footer-link">Applications</a>
+                <a href="service-support.html" class="footer-link"
+                  >Service &amp; Support</a
+                >
+                <a href="career.html" class="footer-link">Career</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Products</div>
+              <nav class="footer-links">
+                <a href="products.html?cat=dc-sources" class="footer-link"
+                  >DC Sources</a
+                >
+                <a href="products.html?cat=ac-sources" class="footer-link"
+                  >AC Sources</a
+                >
+                <a href="products.html?cat=dc-bidir" class="footer-link"
+                  >DC Bidirectional</a
+                >
+                <a href="products.html?cat=dc-loads" class="footer-link"
+                  >DC Loads</a
+                >
+                <a href="products.html?cat=battery-pv-sim" class="footer-link"
+                  >Battery &amp; PV Simulators</a
+                >
+                <a href="products.html?cat=system-solutions" class="footer-link"
+                  >System Integration</a
+                >
+              </nav>
+            </div>
+            <div>
+              <div class="footer-heading">Contact Us</div>
+              <div class="footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span
+                  >134, 1st Floor, 2nd Main Road, Kasturi Nagar, Bangalore –
+                  560043</span
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i
+                ><a href="tel:+919972607819">+91 99726 07819</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i
+                ><a href="mailto:sales@san-dik.com">sales@san-dik.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="bi bi-whatsapp" style="color: #25d366"></i
+                ><a href="https://wa.me/919740570119" target="_blank"
+                  >+91 97405 70119</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex flex-between flex-wrap gap-2">
+          <span
+            >&copy; <span class="current-year"></span> Sandik Technologies Pvt.
+            Ltd. All rights reserved.</span
+          >
+          <!-- <span
+            >In technical collaboration with
+            <a href="https://www.et-system.de/en/" target="_blank"
+              >ET System Electronic GmbH, Germany</a
+            ></span
+          > -->
+          <span
+            >Web Solutions by
+            <a href="" target="_blank" rel="noopener">Render Infotech</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/919740570119" target="_blank" class="wa-fab"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <button class="scroll-top" id="scrollTopBtn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
