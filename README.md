@@ -66,7 +66,7 @@ npx serve .
 | `--red-dk` | `#8B0009` | Hover states |
 | `--black` | `#080808` | Backgrounds, hero |
 | `--dark-1` | `#0f0f0f` | Sidebar, cards |
-| `--mid` | `#666666` | Body text |
+| `--mid` | `#555555` | Body text |
 | `--border` | `#e2e2e2` | Card borders |
 | `--light` | `#f4f4f4` | Alt sections |
 | Display Font | `Bebas Neue` | Headings, stats, hero |

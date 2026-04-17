@@ -70,7 +70,8 @@
 .hero-eyebrow {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.68rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--red);
@@ -185,7 +186,7 @@
 .hpt-cat {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--red);
@@ -195,14 +196,14 @@
 .hpt-name {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.2rem;
 }
 
 .hpt-spec {
-  font-size: 0.73rem;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /* Feature Ribbon */
@@ -264,13 +265,17 @@
 .cat-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--border);
+  gap: 1.5rem;
+  /* background: var(--border); */
+  background: transparent;
 }
 
 .cat-card {
   background: var(--white);
-  padding: 2rem 1.75rem;
+  /* padding: 2rem 1.75rem; */
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
   cursor: pointer;
   transition: all var(--t-med);
   position: relative;
@@ -295,7 +300,8 @@
 
 .cat-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   z-index: 2;
 }
 
@@ -305,8 +311,8 @@
 
 .cat-card-num {
   font-family: var(--font-display);
-  font-size: 3.5rem;
-  color: rgba(0, 0, 0, 0.05);
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.2);
   line-height: 1;
   position: absolute;
   top: 0.5rem;
@@ -315,12 +321,13 @@
 }
 
 .cat-card:hover .cat-card-num {
-  color: rgba(192, 0, 12, 0.08);
+  color: rgba(192, 0, 12, 0.1);
 }
 
 .cat-card-icon {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
   background: var(--dark-1);
   display: flex;
   align-items: center;
@@ -336,20 +343,24 @@
 .cat-card:hover .cat-card-icon {
   background: var(--red);
   color: var(--white);
+  transform: scale(1.05);
 }
 
 .cat-card-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
   margin-bottom: 0.5rem;
   position: relative;
   z-index: 1;
 }
 
 .cat-card-desc {
-  font-size: 0.82rem;
-  color: var(--mid);
+  font-size: 0.9rem;
+  /* color: var(--mid); */
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 500;
   line-height: 1.65;
   flex: 1;
   margin-bottom: 1rem;
@@ -360,15 +371,16 @@
 .cat-card-subs {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--red);
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  opacity: 0.85;
+  gap: 0.5rem;
 }
 
 /* ── WHY CARDS ──────────────────────────── */
@@ -379,10 +391,11 @@
 }
 
 .why-card {
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 2.2rem;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: 3px solid transparent;
+  border-radius: 8px;
   position: relative;
   z-index: 1;
   transition: all var(--t-med);
@@ -390,35 +403,37 @@
 
 .why-card:hover {
   border-top-color: var(--red);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .why-num {
   font-family: var(--font-display);
   font-size: 3.5rem;
-  color: rgba(192, 0, 12, 0.14);
+  /* color: rgba(192, 0, 12, 0.14); */
+  color: var(--red-dk);
   line-height: 1;
   margin-bottom: 0.5rem;
 }
 
 .why-icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--red);
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .why-title {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
   color: var(--white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .why-text {
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.75);
   line-height: 1.75;
   margin: 0;
 }
@@ -427,22 +442,27 @@
 .app-mini-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--border);
+  gap: 1rem;
+  background: transparent;
 }
 
 .app-mini-card {
   background: var(--white);
   display: flex;
   align-items: flex-start;
-  gap: 1.1rem;
-  padding: 1.75rem;
+  gap: 1.25rem;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   cursor: pointer;
-  transition: all var(--t-fast);
+  transition: all var(--t-med);
 }
 
 .app-mini-card:hover {
-  background: var(--black);
+  /* background: var(--black); */
+  background: #111111;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .app-mini-icon {
@@ -465,15 +485,16 @@
 .app-mini-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
   margin-bottom: 0.3rem;
   transition: color var(--t-fast);
 }
 
 .app-mini-desc {
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   color: var(--mid);
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
   transition: color var(--t-fast);
 }
@@ -482,7 +503,7 @@
   color: var(--white);
 }
 .app-mini-card:hover .app-mini-desc {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 /* ── BIG CTA ──────────────────────────── */
@@ -511,8 +532,8 @@
 ══════════════════════════════════════════════ */
 .products-layout {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  min-height: 80vh;
+  grid-template-columns: 320px 1fr;
+  min-height: 85vh;
 }
 
 /* Sidebar */
@@ -537,10 +558,10 @@
 .sidebar-section-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.6rem;
-  letter-spacing: 0.22em;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.75);
   padding: 1.25rem 1.25rem 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
@@ -550,16 +571,16 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.9rem 1.25rem;
+  padding: 1rem 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.75);
   text-align: left;
   border-left: 3px solid transparent;
   transition: all var(--t-fast);
@@ -576,7 +597,7 @@
 }
 
 .sidebar-cat-btn i {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.25);
   transition: transform var(--t-fast);
 }
@@ -603,9 +624,9 @@
   border-left: 3px solid transparent;
   cursor: pointer;
   font-family: var(--font-heading);
-  font-size: 0.74rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.65);
   text-align: left;
   transition: all var(--t-fast);
 }
@@ -614,6 +635,7 @@
   content: "›";
   color: var(--red);
   font-weight: 700;
+  font-size: 0.9rem;
 }
 .sidebar-sub-btn:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -632,7 +654,7 @@
 .products-topbar {
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  padding: 1rem 2rem;
+  padding: 1.4rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -645,7 +667,7 @@
 
 .products-breadcrumb {
   font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-size: 1rem;
   color: var(--mid);
   letter-spacing: 0.04em;
 }
@@ -658,19 +680,20 @@
 .products-count {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.88rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--mid);
   background: var(--light);
-  padding: 0.35rem 0.85rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Product grid */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
+  gap: 2px;
+  padding: 2rem;
   background: var(--border);
   padding: 1px;
 }
@@ -678,6 +701,8 @@
 /* Product card */
 .product-card {
   background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   transition: all var(--t-med);
@@ -687,13 +712,14 @@
 
 .product-card:hover {
   box-shadow: var(--shadow-md);
-  transform: scale(1.015);
+  /* transform: scale(1.015); */
+  transform: translateY(-6px);
   z-index: 2;
 }
 
 .product-card-img {
   background: var(--dark-2);
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -744,7 +770,7 @@
   color: var(--white);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.2rem 0.6rem;
@@ -774,8 +800,8 @@
 .product-model {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--red);
   margin-bottom: 0.3rem;
@@ -784,9 +810,9 @@
 .product-name {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.1rem;
 }
 
 .product-specs {
@@ -796,9 +822,9 @@
 }
 
 .product-specs li {
-  font-size: 0.79rem;
+  font-size: 0.88rem;
   color: var(--mid);
-  padding: 0.28rem 0;
+  padding: 0.4rem 0;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: flex-start;
@@ -827,10 +853,10 @@
   color: var(--white);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.55rem 1rem;
+  padding: 0.75rem 1rem;
   border: none;
   cursor: pointer;
   transition: background var(--t-fast);
@@ -845,10 +871,10 @@
   color: var(--white);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.55rem 0.9rem;
+  padding: 0.75rem 0.9rem;
   border: none;
   cursor: pointer;
   display: flex;
@@ -882,27 +908,33 @@
 .app-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--border);
+  gap: 1rem;
+  /* background: var(--border); */
+  background: transparent;
 }
 
 .app-card-full {
   background: var(--white);
-  padding: 2.25rem;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
   cursor: pointer;
-  transition: all var(--t-fast);
+  transition: all var(--t-med);
 }
 
 .app-card-full:hover {
-  background: var(--dark-1);
+  /* background: var(--dark-1); */
+  background: #111111;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .app-card-icon {
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   background: var(--red);
   display: flex;
   align-items: center;
@@ -920,13 +952,14 @@
 .app-card-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
   margin-bottom: 0.3rem;
   transition: color var(--t-fast);
 }
 
 .app-card-desc {
-  font-size: 0.84rem;
+  font-size: 0.9rem;
   color: var(--mid);
   line-height: 1.65;
   margin: 0;
@@ -937,7 +970,7 @@
   color: var(--white);
 }
 .app-card-full:hover .app-card-desc {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 /* App detail section */
@@ -978,19 +1011,20 @@
 .usecase-dot {
   width: 28px;
   height: 28px;
-  background: var(--dark-1);
+  /* background: var(--dark-1); */
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--red);
-  font-size: 0.8rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
 .usecase-text {
   font-size: 0.95rem;
   /* color: var(--mid); */
-  color: #4B5563;
+  color: #4b5563;
   margin: 0;
   line-height: 1.7;
 }
@@ -1006,9 +1040,10 @@
 }
 
 .service-card {
-  padding: 2.25rem;
+  padding: 2.2rem;
   background: var(--white);
   border: 1px solid var(--border);
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   transition: all var(--t-med);
@@ -1043,7 +1078,7 @@
   justify-content: center;
   color: var(--red);
   font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   transition: all var(--t-fast);
 }
 
@@ -1054,14 +1089,15 @@
 }
 .service-card h4 {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.15rem;
+  letter-spacing: 0.02em;
   margin-bottom: 0.6rem;
 }
 .service-card p {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--mid);
-  line-height: 1.85;
+  line-height: 1.75;
   margin: 0;
 }
 
@@ -1084,7 +1120,7 @@
 .process-step-num {
   font-family: var(--font-display);
   font-size: 2.5rem;
-  color: rgba(192, 0, 12, 0.18);
+  color: rgba(192, 0, 12, 0.4);
   line-height: 1;
   min-width: 54px;
   flex-shrink: 0;
@@ -1165,6 +1201,7 @@
   gap: 1.1rem;
   padding: 1.5rem;
   border: 1px solid var(--border);
+  border-radius: 8px;
   background: var(--white);
   transition: all var(--t-fast);
 }
@@ -1189,11 +1226,11 @@
 .perk-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   margin-bottom: 0.25rem;
 }
 .perk-desc {
-  font-size: 0.81rem;
+  font-size: 1rem;
   color: var(--mid);
   margin: 0;
   line-height: 1.6;
@@ -1204,7 +1241,8 @@
   border: 1px solid var(--border);
   background: var(--white);
   overflow: hidden;
-  margin-bottom: 2px;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
   transition: border-color var(--t-fast);
 }
 
@@ -1224,12 +1262,13 @@
 
 .job-card.active .job-header {
   background: var(--dark-1);
+  padding: 1.75rem 1.75rem;
 }
 
 .job-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   margin-bottom: 0.2rem;
   transition: color var(--t-fast);
 }
@@ -1239,8 +1278,8 @@
 }
 
 .job-dept {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--mid);
   font-family: var(--font-heading);
@@ -1248,7 +1287,7 @@
 }
 
 .job-card.active .job-dept {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .job-tags {
@@ -1261,10 +1300,10 @@
 .job-tag {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.2rem 0.55rem;
+  padding: 0.3rem 0.7rem;
   border: 1px solid;
 }
 
@@ -1286,7 +1325,7 @@
   color: var(--white);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
@@ -1303,7 +1342,7 @@
 
 .job-body {
   display: none;
-  padding: 1.75rem;
+  padding: 2rem;
   border-top: 1px solid var(--border);
 }
 .job-card.active .job-body {
@@ -1313,8 +1352,8 @@
 .jd-heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.68rem;
-  letter-spacing: 0.2em;
+  font-size: 1rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--red);
   margin-top: 1.25rem;
@@ -1331,11 +1370,11 @@
 }
 
 .jd-list li {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--mid);
   padding: 0.3rem 0 0.3rem 1.1rem;
   position: relative;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .jd-list li::before {
@@ -1354,14 +1393,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--border);
+  background: transparent;
 }
 
 .about-stat-block {
   padding: 2.5rem 2rem;
   text-align: center;
-  background: var(--white);
+  background: var(--border);
   transition: background var(--t-fast);
+  border-radius: 6px;
 }
 
 .about-stat-block:hover {
@@ -1389,12 +1429,13 @@
 .mission-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .mission-card {
-  padding: 2.5rem;
+  padding: 2.75rem;
   border: 1px solid var(--border);
+  border-radius: 8px;
   background: var(--white);
   position: relative;
   overflow: hidden;
@@ -1416,29 +1457,30 @@
   transform: translateY(-3px);
 }
 .mission-card-icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--red);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
 }
 .mission-card h4 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.01em;
 }
 .mission-card p {
-  font-size: 0.87rem;
+  font-size: 0.95rem;
   color: var(--mid);
-  line-height: 1.85;
+  line-height: 1.75;
   margin: 0;
 }
 
 /* About pillar */
 .about-pillar {
   display: flex;
-  gap: 1rem;
-  padding: 1.25rem 0;
+  gap: 1.25rem;
+  padding: 1.6rem 0;
   border-bottom: 1px solid var(--border);
 }
 .about-pillar:last-child {
@@ -1446,28 +1488,30 @@
 }
 
 .about-pillar-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
   background: var(--red);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .about-pillar-title {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
 }
 .about-pillar-desc {
-  font-size: 0.84rem;
+  font-size: 0.95rem;
   color: var(--mid);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ══════════════════════════════════════════════
@@ -1527,7 +1571,7 @@
   margin-bottom: 0.6rem;
 }
 .contact-card p {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--mid);
   line-height: 1.85;
   margin: 0;
