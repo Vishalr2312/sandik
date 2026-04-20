@@ -10,6 +10,23 @@
   .mega-dropdown { width: 580px; }
 }
 
+/* ── TABLET / LAPTOP TRANSITION (≤1024px) ───── */
+@media (max-width: 1024px) {
+  .hero-left-panel { padding: 6rem 2.5rem 4rem; }
+
+  .cat-cards-grid,
+  .why-grid,
+  .service-cards-grid,
+  .perks-grid,
+  .mission-grid,
+  .contact-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-layout { grid-template-columns: 280px 1fr; }
+  .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* ── SMALL TABLET (≤900px) ─────────────────── */
 @media (max-width: 900px) {
   .main-nav, .header-cta { display: none; }
@@ -26,6 +43,30 @@
   /* Hero adjustments */
   .page-hero { padding: 7rem 0 3rem; }
   .page-hero h1 { font-size: 2.8rem; }
+
+  /* Inner page readability */
+  .page-hero p { font-size: 1rem; }
+  .breadcrumb { font-size: 0.7rem; letter-spacing: 0.04em; }
+
+  /* Component grids */
+  .cat-cards-grid,
+  .why-grid,
+  .service-cards-grid,
+  .perks-grid,
+  .mission-grid,
+  .app-mini-grid,
+  .app-cards-grid,
+  .about-stats-grid,
+  .contact-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .app-detail-grid { gap: 2rem; }
+
+  /* Products page */
+  .products-topbar { padding: 1rem 1.25rem; }
+  .products-breadcrumb { font-size: 0.88rem; }
+  .products-count { font-size: 0.75rem; }
 }
 
 /* ── MOBILE (≤600px) ──────────────────────── */
@@ -38,8 +79,47 @@
 
   .page-hero h1 { font-size: 2.2rem; }
   .page-hero { padding: 6.5rem 0 2.5rem; }
+  .page-hero p { font-size: 0.95rem; line-height: 1.7; }
+  .breadcrumb { flex-wrap: wrap; gap: 0.35rem; }
 
   .btn { padding: 0.75rem 1.5rem; font-size: 0.75rem; }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .cat-cards-grid,
+  .why-grid,
+  .service-cards-grid,
+  .perks-grid,
+  .mission-grid,
+  .app-mini-grid,
+  .app-cards-grid,
+  .about-stats-grid,
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-card,
+  .why-card,
+  .service-card,
+  .app-mini-card,
+  .app-card-full,
+  .mission-card,
+  .contact-card {
+    padding: 1.4rem;
+  }
+
+  .process-step {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.1rem;
+  }
+
+  .amc-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-main { padding: 3.5rem 0 2.5rem; }
@@ -50,15 +130,45 @@
 
 /* ── HOME HERO RESPONSIVE ─────────────────── */
 @media (max-width: 900px) {
+  .hero-wrap,
   .hero-split { grid-template-columns: 1fr; }
-  .hero-right-panel { display: none; }
   .hero-left-panel { padding: 6rem 2rem 4rem; }
+
+  /* Keep right panel content visible on mobile as stacked cards */
+  .hero-right-panel {
+    display: block;
+    background: transparent;
+    overflow: visible;
+    padding: 0 2rem 2.5rem;
+  }
+
+  .hero-right-panel > .hero-grid,
+  .hero-diagonal {
+    display: none;
+  }
+
+  .hero-products-list {
+    position: static;
+    inset: auto;
+    padding: 0;
+    gap: 0.75rem;
+  }
+
+  .hero-product-teaser {
+    padding: 0.9rem 1rem;
+  }
 }
 
 @media (max-width: 600px) {
+  .hero-left-panel { padding: 5.5rem 1.25rem 3rem; }
+  .hero-right-panel { padding: 0 1.25rem 2rem; }
+
   .hero-title-main { font-size: 4rem; }
   .hero-stats-row { flex-direction: column; gap: 0; }
   .hero-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+
+  .hpt-name { font-size: 0.98rem; }
+  .hpt-spec { font-size: 0.8rem; }
 }
 
 /* ── PRODUCTS PAGE RESPONSIVE ─────────────── */
@@ -75,7 +185,16 @@
     background: #111;
     border-bottom: 2px solid var(--red);
   }
-  .sidebar-cat-btn { flex: none; padding: 0.5rem 0.85rem; font-size: 0.65rem; }
+  .sidebar-cat-btn {
+    flex: none;
+    width: auto;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar-cat-btn.active { border-bottom-color: var(--red); }
   .sidebar-subcats { display: none !important; }
   .products-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -88,6 +207,7 @@
 @media (max-width: 700px) {
   .job-header { flex-direction: column; gap: 1rem; }
   .perks-grid { grid-template-columns: 1fr; }
+  .job-apply-btn { width: 100%; justify-content: center; }
 }
 
 /* ── CONTACT RESPONSIVE ───────────────────── */
@@ -116,4 +236,25 @@
 @media (max-width: 900px) {
   .app-detail-grid { grid-template-columns: 1fr; }
   .app-cards-grid { grid-template-columns: 1fr; }
+}
+
+/* ── EXTRA SMALL DEVICES (≤480px) ───────────── */
+@media (max-width: 480px) {
+  .header-inner { padding: 0 1rem; }
+  .hero-left-panel { padding: 5.5rem 1rem 3rem; }
+  .hero-title-main { font-size: clamp(2.6rem, 14vw, 3.2rem); }
+  .hero-subtitle { font-size: 0.95rem; line-height: 1.65; }
+
+  .products-topbar { padding: 0.9rem 1rem; }
+  .products-breadcrumb { font-size: 0.78rem; }
+  .products-count {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .product-card-body { padding: 1rem; }
+  .btn-enquire,
+  .btn-ref { font-size: 0.72rem; padding: 0.65rem 0.75rem; }
 }

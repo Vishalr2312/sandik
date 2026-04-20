@@ -256,7 +256,13 @@
 ════════════════════════════════════════════ -->
     <section class="hero-bg-container">
       <div class="hero-bg">
-        <img src="assets/images/homepage_banner_shifted.png" alt="home-banner" />
+        <picture>
+          <source
+            media="(max-width: 900px)"
+            srcset="assets/images/homepage-banner-mobile.png"
+          />
+          <img src="assets/images/homepage_banner_shifted.png" alt="home-banner" />
+        </picture>
       </div>
     </section>
 
