@@ -69,6 +69,7 @@
     inset: 0;
     z-index: 0;
     overflow: hidden;
+    margin-top: 72px;
   }
 
   .hero-bg img {

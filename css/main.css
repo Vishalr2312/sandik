@@ -297,7 +297,7 @@ textarea {
 .nav-link {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   line-height: 1.2;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -408,7 +408,7 @@ textarea {
 .mega-col-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--red);
@@ -439,7 +439,7 @@ textarea {
 }
 
 .mega-link-desc {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.45);
   line-height: 1.5;
 }
