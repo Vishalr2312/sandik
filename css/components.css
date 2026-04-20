@@ -57,7 +57,7 @@
 
 /* Background Image Layer */
 .hero-bg-container {
-  min-height: 70vh;
+  min-height: 95vh;
   background: var(--black);
   display: grid;
   grid-template-columns: 1fr 1fr;
