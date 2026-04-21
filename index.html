@@ -280,22 +280,40 @@
           />
           <img src="assets/images/dc-loads-alt.png" alt="DC electronic loads" />
         </picture>
-        <picture class="hero-slide">
-          <source
-            media="(max-width: 900px)"
-            srcset="assets/images/regenerative-loads-mobile-gif.gif"
-          />
-          <img
-            src="assets/images/regenerative-loads-large-gif.gif"
-            alt="Regenerative load systems"
-          />
-        </picture>
+        <div class="hero-slide">
+          <video
+            id="heroVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source id="heroSource" type="video/mp4" />
+          </video>
+        </div>
       </div>
       <div class="hero-slider-indicators" aria-label="Hero slides">
-        <button class="hero-indicator is-active" type="button" aria-label="Slide 1"></button>
-        <button class="hero-indicator" type="button" aria-label="Slide 2"></button>
-        <button class="hero-indicator" type="button" aria-label="Slide 3"></button>
-        <button class="hero-indicator" type="button" aria-label="Slide 4"></button>
+        <button
+          class="hero-indicator is-active"
+          type="button"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          class="hero-indicator"
+          type="button"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          class="hero-indicator"
+          type="button"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          class="hero-indicator"
+          type="button"
+          aria-label="Slide 4"
+        ></button>
       </div>
     </section>
 
