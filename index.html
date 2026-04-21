@@ -256,13 +256,46 @@
 ════════════════════════════════════════════ -->
     <section class="hero-bg-container">
       <div class="hero-bg">
-        <picture>
+        <picture class="hero-slide is-active">
           <source
             media="(max-width: 900px)"
             srcset="assets/images/homepage-banner-mobile.png"
           />
-          <img src="assets/images/homepage_banner_shifted.png" alt="home-banner" />
+          <img
+            src="assets/images/homepage_banner_shifted.png"
+            alt="home-banner"
+          />
         </picture>
+        <picture class="hero-slide">
+          <source
+            media="(max-width: 900px)"
+            srcset="assets/images/ac-supply-mobile-alt.png"
+          />
+          <img src="assets/images/ac-supply-alt.png" alt="AC supply systems" />
+        </picture>
+        <picture class="hero-slide">
+          <source
+            media="(max-width: 900px)"
+            srcset="assets/images/dc-loads-mobile.jpg"
+          />
+          <img src="assets/images/dc-loads-alt.png" alt="DC electronic loads" />
+        </picture>
+        <picture class="hero-slide">
+          <source
+            media="(max-width: 900px)"
+            srcset="assets/images/regenerative-loads-mobile-gif.gif"
+          />
+          <img
+            src="assets/images/regenerative-loads-large-gif.gif"
+            alt="Regenerative load systems"
+          />
+        </picture>
+      </div>
+      <div class="hero-slider-indicators" aria-label="Hero slides">
+        <button class="hero-indicator is-active" type="button" aria-label="Slide 1"></button>
+        <button class="hero-indicator" type="button" aria-label="Slide 2"></button>
+        <button class="hero-indicator" type="button" aria-label="Slide 3"></button>
+        <button class="hero-indicator" type="button" aria-label="Slide 4"></button>
       </div>
     </section>
 

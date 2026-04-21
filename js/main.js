@@ -256,6 +256,35 @@
     document.querySelectorAll('img[data-src]').forEach(img => imgObserver.observe(img));
   }
 
+  /* ── HERO BACKGROUND SLIDER ────────────────── */
+  const heroSlides = document.querySelectorAll('.hero-bg .hero-slide');
+  const heroIndicators = document.querySelectorAll('.hero-slider-indicators .hero-indicator');
+  if (heroSlides.length > 1) {
+    let activeSlide = 0;
+    const sliderIntervalMs = 4500;
+
+    const setActiveSlide = (index) => {
+      heroSlides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('is-active', slideIndex === index);
+      });
+      heroIndicators.forEach((dot, dotIndex) => {
+        dot.classList.toggle('is-active', dotIndex === index);
+      });
+    };
+
+    heroIndicators.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        activeSlide = dotIndex;
+        setActiveSlide(activeSlide);
+      });
+    });
+
+    setInterval(() => {
+      activeSlide = (activeSlide + 1) % heroSlides.length;
+      setActiveSlide(activeSlide);
+    }, sliderIntervalMs);
+  }
+
   /* ── CURRENT YEAR ─────────────────────────── */
   document.querySelectorAll('.current-year').forEach(el => {
     el.textContent = new Date().getFullYear();
