@@ -363,8 +363,8 @@
   if (heroVideo && heroSource) {
     const getHeroVideoSrc = () =>
       mobileHeroVideoQuery.matches
-        ? "assets/images/regenerative-loads-mobile-video.mp4"
-        : "assets/images/regenerative-loads-video.mp4";
+        ? "assets/images/regenerative-loads-mobile-org.mp4"
+        : "assets/images/regenerative-loads-org.mp4";
 
     const setVideoSource = () => {
       const nextSrc = getHeroVideoSrc();
