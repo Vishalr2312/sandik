@@ -76,12 +76,18 @@
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: opacity 0.9s ease;
+    transform: translate3d(1%, 0, 0);
+    transition:
+      opacity 1.15s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+    backface-visibility: hidden;
     pointer-events: none;
   }
 
   .hero-slide.is-active {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 
   .hero-bg img,
@@ -140,6 +146,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    transform: none;
+    transition: opacity 0.25s linear;
+  }
+
   .hero-slide.is-active img {
     animation: none;
   }
