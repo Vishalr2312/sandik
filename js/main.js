@@ -389,4 +389,25 @@
       mobileHeroVideoQuery.addListener(setVideoSource);
     }
   }
+
+  /* ── EXPOSE REVEAL RE-OBSERVER - For Applications.js  ────────────────── */
+  window.observeNewRevealElements = function (container) {
+    const els = container.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+    if (!("IntersectionObserver" in window)) {
+      els.forEach(el => el.classList.add("revealed"));
+      return;
+    }
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach(el => obs.observe(el));
+  };
 })();

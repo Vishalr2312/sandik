@@ -150,6 +150,9 @@ textarea {
 .section-title.light {
   color: var(--white);
 }
+.section-title.dark {
+  color: var(--black);
+}
 
 .section-body {
   font-size: 1.1rem;
