@@ -177,6 +177,9 @@ textarea {
 .section {
   padding: var(--space-xl) 0;
 }
+.home-section {
+  padding: var(--space-lg) 0;
+}
 .section-sm {
   padding: var(--space-lg) 0;
 }
