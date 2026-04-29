@@ -959,9 +959,6 @@
             <button class="btn-enquire" onclick="window.location.href='contact.html?product=${encodeURIComponent(product.model)}'">
               Request Quote
             </button>
-            <button class="btn-ref" onclick="window.open('https://www.et-system.de/en/','_blank')">
-              <i class="bi bi-box-arrow-up-right"></i> ET System
-            </button>
           </div>
         </div>
       </div>`;
